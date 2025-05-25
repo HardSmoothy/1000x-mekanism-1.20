@@ -1,0 +1,10 @@
+StartupEvents.registry('item', event => {
+    event.create('mek1000:basic_super_circuit')
+    event.create('mek1000:advanced_super_circuit')
+    event.create('mek1000:elite_super_circuit')
+    event.create('mek1000:ultimate_super_circuit')
+    event.create('mek1000:absolute_super_circuit')
+    event.create('mek1000:supreme_super_circuit')
+    event.create('mek1000:cosmic_super_circuit')
+    event.create('mek1000:infinite_super_circuit')
+})

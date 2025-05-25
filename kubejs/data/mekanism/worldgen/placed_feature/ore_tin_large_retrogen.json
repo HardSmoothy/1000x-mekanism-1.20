@@ -1,0 +1,9 @@
+{
+    "feature": "mekanism:ore_tin_large_retrogen",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 0
+        }
+    ]
+}

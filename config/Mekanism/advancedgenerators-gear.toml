@@ -1,0 +1,5 @@
+#Maximum amount of energy in the tablet
+maxEnergy = "2000000000"
+#Amount of energy transmitted
+chargeRate = "10000000"
+

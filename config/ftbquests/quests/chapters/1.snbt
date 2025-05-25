@@ -1,0 +1,617 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: "29F87984A1A84EBA"
+	icon: {
+		Count: 1
+		id: "minecraft:oak_log"
+		tag: { }
+	}
+	id: "6B1C4E8298A2900E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"このModpackはこのような特徴を持っています"
+				"&a・消費電力が1000倍にされたMekanismの機械たち&r"
+				"&a・大量に生成される鉱石&r"
+				"&a・最大192000倍の鉱石倍加レシピ&r"
+				"&b・Multiblocked2による独自マルチブロックと機械&r"
+				"&c・ピースフル固定&r"
+				"&c・ネザー・エンド廃止&r"
+				""
+				""
+				""
+				"なるべく耐えてくださいね"
+			]
+			id: "016780D32B1ABC49"
+			subtitle: "1.20アップデート"
+			tasks: [{
+				id: "3604615BBDCBBC95"
+				type: "checkmark"
+			}]
+			title: "桁違いな電力へようこそ"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"1.20へポートする上で以下の要素が変更されています"
+				""
+				"&c・Ultimate Solar Panelsの廃止&r"
+				"Mekanism:Advanced Generatorsに置き換えられています"
+				""
+				"&c・LazierAEの廃止&r"
+				"一部の中間素材が変更されています"
+				""
+				"&a・Cognitionの追加&r"
+				"理由:経験値オベリスクを追加したらおまけで色々付いてきたから"
+				""
+				"一部のクラフトが当Modの担当になっています　詳しくはクエスト参照"
+				""
+				"&d・Mekanism発電機が強化されていない&r"
+				"ガス発電は強化版が追加されています"
+				""
+				"&d・ステラ発電機がない&r"
+				"大型ガス燃焼発電機でなんとかしてください"
+				""
+				"&e・QIOを使用するレシピをSuper Circuitに変更&r"
+			]
+			id: "7171F34F7B348F9C"
+			optional: true
+			tasks: [{
+				id: "3F6909393EC6B88D"
+				type: "checkmark"
+			}]
+			title: "1.18版の経験者へ"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			description: [
+				"このModpackにはFTB Ultimineが入っています"
+				"キー設定をして使いましょう"
+				""
+				"また、このModpackでは鉱石が木レベルのツールで掘れるようになっています"
+			]
+			id: "296399230B63F479"
+			subtitle: "一括破壊"
+			tasks: [
+				{
+					count: 1024L
+					id: "06D81984455DFF8E"
+					item: {
+						Count: 1024
+						id: "minecraft:raw_iron"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "466D86E07E105F30"
+					item: {
+						Count: 1024
+						id: "minecraft:diamond"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "7A7AFD63B788D47D"
+					item: {
+						Count: 1024
+						id: "minecraft:redstone"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "5C8E63793064C890"
+					item: {
+						Count: 1024
+						id: "mekanism:raw_osmium"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "0663372C95BA17DE"
+					item: {
+						Count: 1024
+						id: "minecraft:coal"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "基本素材を集める"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			description: [
+				"&aBotany Pot&rは作物と木を栽培する設備です"
+				""
+				"土を使用することで1分で木を育てることができます"
+			]
+			id: "68760385B1DE4302"
+			subtitle: "盆栽シミュレーター"
+			tasks: [
+				{
+					id: "53AA7CA667184448"
+					item: {
+						Count: 1
+						id: "botanypots:terracotta_hopper_botany_pot"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1C975B830CB5EA5B"
+					item: {
+						Count: 1
+						id: "minecraft:dirt"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			description: [
+				"Sophisticated  BackpacksはバックパックModです"
+				""
+				"&aStack Upgrade&rはバックパックの強化アイテムで、1つ装着すると&c1スロット当たりの収納量&rが増えます"
+				"最大3枚まで装着可能です"
+			]
+			id: "6FB7FFBB57D7E799"
+			subtitle: "多分いちばん使いやすい"
+			tasks: [
+				{
+					id: "771F5232DEC1DD57"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:backpack"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "709DEA1975750C07"
+					item: {
+						Count: 3
+						id: "sophisticatedbackpacks:stack_upgrade_tier_4"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "バックパックを作る"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6FB7FFBB57D7E799"]
+			description: [
+				"&aAdvanced Magnet Upgrade&rは装着するとバックパックがマグネットとしても機能するようになります"
+				"フィルタリングをかけることでバックパックに収納中のアイテムのみを収納することも可能です"
+				""
+				"&aAdvanced Compacting Upgrade&rは装着すると3x3や2x2のレシピで自動圧縮を行ってくれます"
+			]
+			id: "05F676E3893ACC4D"
+			subtitle: "マグネットModの代わり"
+			tasks: [
+				{
+					id: "0DFD33B4B7487326"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:advanced_magnet_upgrade"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "185E590081FE8DE7"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:advanced_compacting_upgrade"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "バックパックの強化"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["296399230B63F479"]
+			description: ["最初の機械である&a冶金吹き込み機&rを稼働させるには256台の風力発電機が必要です"]
+			id: "3F9B706BE86D157B"
+			subtitle: "足りません"
+			tasks: [{
+				count: 256L
+				id: "5F963FF488D652EA"
+				item: {
+					Count: 256
+					id: "mekanismgenerators:wind_generator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "風力発電機を作る"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3F9B706BE86D157B"]
+			description: [
+				"&a冶金吹き込み機&rはMekanismの最初の加工機械です"
+				"制作コストが&c9倍になっています&r"
+			]
+			id: "68335D23BF84FEE3"
+			subtitle: "初めての機械"
+			tasks: [{
+				id: "76C8CE2EB8D24328"
+				item: {
+					Count: 1
+					id: "mekanism:metallurgic_infuser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["68335D23BF84FEE3"]
+			id: "2222120D1B1E679D"
+			tasks: [{
+				id: "7AFADB79BF632F99"
+				item: {
+					Count: 1
+					id: "ae2:flawless_budding_quartz"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2222120D1B1E679D"]
+			id: "09C20477EF4F63CF"
+			tasks: [{
+				id: "1FAE0BA6C97C2528"
+				item: {
+					Count: 1
+					id: "ae2:mysterious_cube"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5F6F701816107E28"
+				"09C20477EF4F63CF"
+			]
+			id: "503CF531934055CD"
+			tasks: [
+				{
+					id: "52176CFF76B2BCEF"
+					item: {
+						Count: 1
+						id: "ae2:logic_processor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "77E1A7FC3CC33B3F"
+					item: {
+						Count: 1
+						id: "ae2:calculation_processor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1890FB940734C5C9"
+					item: {
+						Count: 1
+						id: "ae2:engineering_processor"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			id: "5F6F701816107E28"
+			tasks: [
+				{
+					id: "704B12C6B3454D1A"
+					item: {
+						Count: 1
+						id: "integrateddynamics:drying_basin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3D5F1894479D512F"
+					item: {
+						Count: 1
+						id: "minecraft:milk_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4C9CE83D27C23AF3"
+					item: {
+						Count: 1
+						id: "minecraft:slime_ball"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["503CF531934055CD"]
+			id: "13697F0024B3E315"
+			tasks: [{
+				id: "247478230D473B87"
+				item: {
+					Count: 1
+					id: "mekanism:basic_control_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["68335D23BF84FEE3"]
+			id: "4E1C88D7480C205E"
+			tasks: [{
+				id: "0C8424CF566571A6"
+				item: {
+					Count: 1
+					id: "mekanism:steel_casing"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"13697F0024B3E315"
+				"4E1C88D7480C205E"
+			]
+			id: "0EE8A78C4EFA5BB8"
+			tasks: [
+				{
+					id: "12E81BCCB02B32D5"
+					item: {
+						Count: 1
+						id: "mekanism:enrichment_chamber"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "30355C5A3FD5AC2B"
+					item: {
+						Count: 1
+						id: "mekanism:crusher"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0EE8A78C4EFA5BB8"]
+			id: "24A7B7094ED357E9"
+			tasks: [{
+				id: "432F5C271294B04E"
+				item: {
+					Count: 1
+					id: "mekanism:advanced_control_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["24A7B7094ED357E9"]
+			id: "342D8A0D183D1E23"
+			tasks: [{
+				id: "3B01698102D7E3EF"
+				item: {
+					Count: 1
+					id: "mekanism:pressurized_reaction_chamber"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["18EF09B75E5B4CFC"]
+			id: "38F0D9673E24BE74"
+			tasks: [{
+				id: "54B195626952D9B1"
+				item: {
+					Count: 1
+					id: "mekanism:elite_control_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["24A7B7094ED357E9"]
+			id: "18EF09B75E5B4CFC"
+			tasks: [{
+				id: "2CF4F7C9B073F03F"
+				item: {
+					Count: 1
+					id: "mekanism:purification_chamber"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["38F0D9673E24BE74"]
+			id: "61D9BE79FEB34259"
+			tasks: [{
+				id: "718F0D16D48F27C4"
+				item: {
+					Count: 1
+					id: "mekanism:chemical_injection_chamber"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["61D9BE79FEB34259"]
+			id: "7F5BC9CABAE2CB00"
+			tasks: [{
+				id: "3AA9CD5BBD865418"
+				item: {
+					Count: 1
+					id: "mekanism:ultimate_control_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F5BC9CABAE2CB00"]
+			id: "64310B544BDC74D0"
+			tasks: [
+				{
+					id: "1949A59CAE24BE87"
+					item: {
+						Count: 1
+						id: "mekanism:chemical_dissolution_chamber"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "34E8749D13B7183E"
+					item: {
+						Count: 1
+						id: "mekanism:isotopic_centrifuge"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"64310B544BDC74D0"
+				"342D8A0D183D1E23"
+			]
+			id: "7ED68F17797155BB"
+			tasks: [{
+				id: "222546AA95EA5460"
+				item: {
+					Count: 1
+					id: "mekanismgenerators:gas_burning_generator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7ED68F17797155BB"]
+			id: "55BC5FEC8F4AE878"
+			tasks: [{
+				id: "6AC4BB9887D6DB05"
+				item: {
+					Count: 1
+					id: "mek1000:advanced_gas_burning_generator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["503CF531934055CD"]
+			id: "4CA94C9C9F1B7FE5"
+			tasks: [
+				{
+					id: "4AD10437245D3323"
+					item: {
+						Count: 1
+						id: "megacells:accumulation_processor_press"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1E64A12432005929"
+					item: {
+						Count: 1
+						id: "megacells:accumulation_processor"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 9.0d
+		}
+	]
+	title: "チャプター1"
+}

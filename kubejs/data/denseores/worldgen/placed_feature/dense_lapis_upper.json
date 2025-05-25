@@ -1,0 +1,9 @@
+{
+  "feature": "denseores:ore_dense_lapis_upper",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

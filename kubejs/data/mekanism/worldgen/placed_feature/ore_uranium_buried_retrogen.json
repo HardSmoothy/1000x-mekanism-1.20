@@ -1,0 +1,9 @@
+{
+    "feature": "mekanism:ore_uranium_buried_retrogen",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 0
+        }
+    ]
+}

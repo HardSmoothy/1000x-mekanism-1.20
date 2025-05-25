@@ -1,0 +1,6 @@
+{
+	chapter_groups: [
+		{ id: "29F87984A1A84EBA", title: "メイン" }
+		{ id: "7955F24567DE4319", title: "サブ" }
+	]
+}

@@ -1,0 +1,42 @@
+
+#Advanced Generator Energy Storage Config. This config is synced from server to client.
+[storage]
+	#Base energy storage (Joules).
+	advancedSolarGenerator = "288000"
+	#Base energy storage (Joules).
+	hybridSolarGenerator = "864000"
+	#Base energy storage (Joules).
+	ultimateSolarGenerator = "2592000"
+	#Base energy storage (Joules).
+	quantumSolarGenerator = "7776000"
+	#Base energy storage (Joules).
+	spectralSolarGenerator = "23328000"
+	#Base energy storage (Joules).
+	singularSolarGenerator = "69984000"
+	#Base energy storage (Joules).
+	lightAbsorbingSolarGenerator = "209292000"
+	#Base energy storage (Joules).
+	photonicSolarGenerator = "629856000"
+	#Base energy storage (Joules).
+	creativeSolarGenerator = "2000000000"
+	#Base energy storage (Joules).
+	bigAdvancedSolarGenerator = "1728000"
+	#Base energy storage (Joules).
+	bigHybridSolarGenerator = "5184000"
+	#Base energy storage (Joules).
+	bigUltimateSolarGenerator = "15552000"
+	#Base energy storage (Joules).
+	bigQuantumSolarGenerator = "46656000"
+	#Base energy storage (Joules).
+	bigSpectralSolarGenerator = "139968000"
+	#Base energy storage (Joules).
+	bigSingularSolarGenerator = "419904000"
+	#Base energy storage (Joules).
+	bigLightAbsorbingSolarGenerator = "1255752000"
+	#Base energy storage (Joules).
+	bigPhotonicSolarGenerator = "3779136000"
+	#Base energy storage (Joules).
+	bigCreativeSolarGenerator = "12000000000"
+	#Base energy storage (Joules).
+	windGenerator = "200000"
+

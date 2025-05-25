@@ -1,0 +1,9 @@
+{
+    "feature": "mekanism:ore_fluorite_normal_retrogen",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 0
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "feature": "mekanism:ore_tin_small",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 0
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "denseores:ore_dense_emerald",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+
+#Mekanism Advanced Generators Config. This config is synced between server and client.
+[generators]
+	#Peak output for the Advanced Solar Generator.
+	advancedSolarGeneration = "150"
+	#Peak output for the Hybrid Solar Generator.
+	hybridSolarGeneration = "450"
+	#Peak output for the Ultimate Solar Generator.
+	ultimateSolarGeneration = "1350"
+	#Peak output for the Quantum Solar Generator.
+	quantumSolarGeneration = "4050"
+	#Peak output for the Spectral Solar Generator.
+	spectralSolarGeneration = "12150"
+	#Peak output for the Singular Solar Generator.
+	singularSolarGeneration = "36450"
+	#Peak output for the Light Absorbing Solar Generator.
+	lightAbsorbingSolarGeneration = "109350"
+	#Peak output for the Photonic Solar Generator.
+	photonicSolarGeneration = "328050"
+	#Peak output for the Creative Solar Generator.
+	creativeSolarGeneration = "10000000"
+	#Peak output for the Advanced Solar Generator.
+	bigAdvancedSolarGeneration = "900"
+	#Peak output for the Big Hybrid Solar Generator.
+	bigHybridSolarGeneration = "2700"
+	#Peak output for the Big Ultimate Solar Generator.
+	bigUltimateSolarGeneration = "8100"
+	#Peak output for the Big Quantum Solar Generator.
+	bigQuantumSolarGeneration = "24300"
+	#Peak output for the Big Spectral Solar Generator.
+	bigSpectralSolarGeneration = "72900"
+	#Peak output for the Big Singular Solar Generator.
+	bigSingularSolarGeneration = "218700"
+	#Peak output for the Big Light Absorbing Solar Generator.
+	bigLightAbsorbingSolarGeneration = "656100"
+	#Peak output for the Big Photonic Solar Generator.
+	bigPhotonicSolarGeneration = "1968300"
+	#Peak output for the Big Creative Solar Generator.
+	bigCreativeSolarGeneration = "60000000"
+
+#Wind Generator Settings
+[wind_generator]
+	#Minimum base generation value of the Wind Generator.
+	windGenerationMin = "60"
+	#Maximum base generation value of the Wind Generator.
+	generationMax = "480"
+	#The minimum Y value that affects the Wind Generators Power generation. This value gets clamped at the world's min height.
+	#Range: -2032 ~ 2030
+	minY = 24
+	#The maximum Y value that affects the Wind Generators Power generation. This value gets clamped at the world's logical height.
+	maxY = 2031
+	#The list of dimension ids that the Wind Generator will not generate power in.
+	windGenerationDimBlacklist = []
+

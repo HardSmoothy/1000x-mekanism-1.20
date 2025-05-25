@@ -1,0 +1,9 @@
+{
+    "feature": "mekanism:ore_uranium_small",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 0
+        }
+    ]
+}

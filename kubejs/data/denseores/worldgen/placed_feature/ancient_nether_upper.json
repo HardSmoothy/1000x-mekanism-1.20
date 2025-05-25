@@ -1,0 +1,9 @@
+{
+  "feature": "denseores:ore_ancient_nether_upper",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

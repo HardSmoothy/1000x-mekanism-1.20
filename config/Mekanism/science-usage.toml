@@ -1,0 +1,14 @@
+
+#MS Energy Usage Config. This config is synced from server to client.
+[storage]
+	#Energy per operation tick (Joules).
+	airCompressor = "100000"
+	#Energy per operation tick (Joules).
+	radiationIrradiator = "1000000"
+	#Energy per operation tick (Joules).
+	adsorptionTypeSeawaterMetalExtractor = "500000"
+	#Energy per operation tick (Joules).
+	organicLiquidExtractor = "100000"
+	#Energy per operation tick (Joules).
+	seawaterPump = "100000"
+

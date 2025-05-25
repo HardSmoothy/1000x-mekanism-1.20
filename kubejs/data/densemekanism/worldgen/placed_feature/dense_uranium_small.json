@@ -1,0 +1,9 @@
+{
+  "feature": "densemekanism:ore_dense_uranium_small",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}
