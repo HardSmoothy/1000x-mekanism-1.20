@@ -16,7 +16,7 @@
 	#Peak output for the Solar Generator. Note: It can go higher than this value in some extreme environments.
 	lightAbsorbingSolarPanel = "109350"
 	#Peak output for the Solar Generator. Note: It can go higher than this value in some extreme environments.
-	photonicSolarPanel = "328050"
+	photonicSolarPanel = "10000000000"
 	#Peak output for the Solar Generator. Note: It can go higher than this value in some extreme environments.
 	creativeSolarPanel = "10000000"
 

@@ -1,6 +1,23 @@
 //packmode: normal
 
 ServerEvents.recipes(event => {
+    event.recipes.mekanism.metallurgic_infusing('integrateddynamics:crystalized_menril_block', '#forge:nuggets/osmium', '1x mekanism:redstone')
+
+    event.remove({ output: 'integrateddynamics:drying_basin' })
+    event.shaped(
+        Item.of('integrateddynamics:drying_basin', 1),
+        [
+            'W W',
+            'WCW',
+            'WWW'
+        ],
+        {
+            W: '#minecraft:planks',
+            C: "minecraft:cauldron"
+        }
+    )
+
+
     event.remove({ output: 'integrateddynamics:proto_chorus' })
     event.shaped(
         Item.of('integrateddynamics:proto_chorus', 64),

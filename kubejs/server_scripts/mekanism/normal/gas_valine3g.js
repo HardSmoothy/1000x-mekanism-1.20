@@ -36,5 +36,34 @@ ServerEvents.recipes(event => {
         }
     }).id('mek1000:dvt_fuel')
 
+    event.custom({
+        "type": "mekanism:chemical_infusing",
+        "leftInput": {
+            "amount": 1,
+            "gas": "mek1000:dvt"
+        },
+        "rightInput": {
+            "amount": 1,
+            "gas": "mek1000:saltless_dried_soysouce"
+        },
+        "output": {
+            "gas": "mekanism_extras:silicon_uranium_fuel",
+            "amount": 10000
+        }
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'mekanism:dust_uranium' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:green",
+            "amount": 500
+        },
+        "output": 'mekanism_extras:dust_naquadah'
+    })
+
     event.custom({ "type": "mekanism:chemical_infusing", "leftInput": { "amount": 1, "gas": "mekanism:fissile_fuel" }, "rightInput": { "amount": 1, "gas": "mekanism:ethene" }, "output": { "gas": "mek1000:valine3g", "amount": 2 } })
 })

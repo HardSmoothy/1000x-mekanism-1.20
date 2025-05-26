@@ -32,9 +32,9 @@
 	#Base energy storage (Joules).
 	bigSingularSolarGenerator = "419904000"
 	#Base energy storage (Joules).
-	bigLightAbsorbingSolarGenerator = "1255752000"
+	bigLightAbsorbingSolarGenerator = "12557520000000"
 	#Base energy storage (Joules).
-	bigPhotonicSolarGenerator = "3779136000"
+	bigPhotonicSolarGenerator = "37791360000000"
 	#Base energy storage (Joules).
 	bigCreativeSolarGenerator = "12000000000"
 	#Base energy storage (Joules).

@@ -1,0 +1,10 @@
+#Base factor for machine running time with upgrades
+#Range: > 1
+time_multiplier = 1
+#Base factor for machine power consumption with upgrades
+#Range: > 1
+electricity_multiplier = 1
+#Base factor for machine capacity with upgrades
+#Range: > 1
+capacity_multiplier = 4
+
