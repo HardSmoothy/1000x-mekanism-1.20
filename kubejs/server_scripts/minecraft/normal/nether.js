@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.mekanismMetallurgicInfusing('minecraft:budding_amethyst', 'minecraft:purple_wool', '1000x mekanism:redstone')
 
-    event.recipes.mekanismMetallurgicInfusing('minecraft:soul_sand', 'minecraft:sand', '10x mekanism:bio')
+    event.recipes.mekanismMetallurgicInfusing('minecraft:soul_sand', 'minecraft:sand', '10x mekanism:redstone')
 
     event.recipes.mekanismMetallurgicInfusing('minecraft:netherrack', 'minecraft:cobblestone', '10x mekanism:redstone')
 

@@ -221,4 +221,6 @@ ServerEvents.recipes(event => {
         e: 'mekanism:ultimate_chemical_tank',
         t: 'mek1000:black_casing'
     })
+
+    event.recipes.mekanism.enriching("mek1000:compressed_sps_casing", "64x mekanism:sps_casing")
 })
