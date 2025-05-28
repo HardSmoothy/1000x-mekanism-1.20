@@ -3,11 +3,7 @@
 	default_quest_shape: ""
 	filename: "1"
 	group: "29F87984A1A84EBA"
-	icon: {
-		Count: 1
-		id: "minecraft:oak_log"
-		tag: { }
-	}
+	icon: "minecraft:oak_log"
 	id: "6B1C4E8298A2900E"
 	order_index: 0
 	quest_links: [ ]
@@ -55,7 +51,8 @@
 				"ガス発電は強化版が追加されています"
 				""
 				"&d・ステラ発電機がない&r"
-				"大型ガス燃焼発電機でなんとかしてください"
+				"核融合炉の上位であるナクアダ炉が追加されています"
+				"Modpackで超強化されています"
 				""
 				"&e・QIOを使用するレシピをSuper Circuitに変更&r"
 			]
@@ -78,56 +75,41 @@
 				"また、このModpackでは鉱石が木レベルのツールで掘れるようになっています"
 			]
 			id: "296399230B63F479"
+			rewards: [{
+				id: "48344FE6AEB755FE"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			subtitle: "一括破壊"
 			tasks: [
 				{
 					count: 1024L
 					id: "06D81984455DFF8E"
-					item: {
-						Count: 1024
-						id: "minecraft:raw_iron"
-						tag: { }
-					}
+					item: { Count: 1024, id: "minecraft:raw_iron" }
 					type: "item"
 				}
 				{
 					count: 1024L
 					id: "466D86E07E105F30"
-					item: {
-						Count: 1024
-						id: "minecraft:diamond"
-						tag: { }
-					}
+					item: { Count: 1024, id: "minecraft:diamond" }
 					type: "item"
 				}
 				{
 					count: 1024L
 					id: "7A7AFD63B788D47D"
-					item: {
-						Count: 1024
-						id: "minecraft:redstone"
-						tag: { }
-					}
+					item: { Count: 1024, id: "minecraft:redstone" }
 					type: "item"
 				}
 				{
 					count: 1024L
 					id: "5C8E63793064C890"
-					item: {
-						Count: 1024
-						id: "mekanism:raw_osmium"
-						tag: { }
-					}
+					item: { Count: 1024, id: "mekanism:raw_osmium" }
 					type: "item"
 				}
 				{
 					count: 1024L
 					id: "0663372C95BA17DE"
-					item: {
-						Count: 1024
-						id: "minecraft:coal"
-						tag: { }
-					}
+					item: { Count: 1024, id: "minecraft:coal" }
 					type: "item"
 				}
 			]
@@ -143,29 +125,26 @@
 				"土を使用することで1分で木を育てることができます"
 			]
 			id: "68760385B1DE4302"
+			rewards: [{
+				id: "07FD72833323958E"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			subtitle: "盆栽シミュレーター"
 			tasks: [
 				{
 					id: "53AA7CA667184448"
-					item: {
-						Count: 1
-						id: "botanypots:terracotta_hopper_botany_pot"
-						tag: { }
-					}
+					item: "botanypots:terracotta_hopper_botany_pot"
 					type: "item"
 				}
 				{
 					id: "1C975B830CB5EA5B"
-					item: {
-						Count: 1
-						id: "minecraft:dirt"
-						tag: { }
-					}
+					item: "minecraft:dirt"
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -1.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -176,25 +155,22 @@
 				"最大3枚まで装着可能です"
 			]
 			id: "6FB7FFBB57D7E799"
+			rewards: [{
+				id: "5DCEA49FB0D09CB3"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			subtitle: "多分いちばん使いやすい"
 			tasks: [
 				{
 					id: "771F5232DEC1DD57"
-					item: {
-						Count: 1
-						id: "sophisticatedbackpacks:backpack"
-						tag: { }
-					}
+					item: "sophisticatedbackpacks:backpack"
 					type: "item"
 				}
 				{
 					count: 3L
 					id: "709DEA1975750C07"
-					item: {
-						Count: 3
-						id: "sophisticatedbackpacks:stack_upgrade_tier_4"
-						tag: { }
-					}
+					item: { Count: 3, id: "sophisticatedbackpacks:stack_upgrade_tier_4" }
 					type: "item"
 				}
 			]
@@ -211,24 +187,21 @@
 				"&aAdvanced Compacting Upgrade&rは装着すると3x3や2x2のレシピで自動圧縮を行ってくれます"
 			]
 			id: "05F676E3893ACC4D"
+			rewards: [{
+				id: "6E59EDE2413AB6D1"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			subtitle: "マグネットModの代わり"
 			tasks: [
 				{
 					id: "0DFD33B4B7487326"
-					item: {
-						Count: 1
-						id: "sophisticatedbackpacks:advanced_magnet_upgrade"
-						tag: { }
-					}
+					item: "sophisticatedbackpacks:advanced_magnet_upgrade"
 					type: "item"
 				}
 				{
 					id: "185E590081FE8DE7"
-					item: {
-						Count: 1
-						id: "sophisticatedbackpacks:advanced_compacting_upgrade"
-						tag: { }
-					}
+					item: "sophisticatedbackpacks:advanced_compacting_upgrade"
 					type: "item"
 				}
 			]
@@ -240,15 +213,16 @@
 			dependencies: ["296399230B63F479"]
 			description: ["最初の機械である&a冶金吹き込み機&rを稼働させるには256台の風力発電機が必要です"]
 			id: "3F9B706BE86D157B"
+			rewards: [{
+				id: "329E45488C9DB771"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			subtitle: "足りません"
 			tasks: [{
 				count: 256L
 				id: "5F963FF488D652EA"
-				item: {
-					Count: 256
-					id: "mekanismgenerators:wind_generator"
-					tag: { }
-				}
+				item: { Count: 256, id: "mekanismgenerators:wind_generator" }
 				type: "item"
 			}]
 			title: "風力発電機を作る"
@@ -262,14 +236,15 @@
 				"制作コストが&c9倍になっています&r"
 			]
 			id: "68335D23BF84FEE3"
+			rewards: [{
+				id: "302F69189C4713A4"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			subtitle: "初めての機械"
 			tasks: [{
 				id: "76C8CE2EB8D24328"
-				item: {
-					Count: 1
-					id: "mekanism:metallurgic_infuser"
-					tag: { }
-				}
+				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
 			x: 0.0d
@@ -278,13 +253,15 @@
 		{
 			dependencies: ["68335D23BF84FEE3"]
 			id: "2222120D1B1E679D"
+			rewards: [{
+				id: "718B03796B2C0B51"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			subtitle: "隕石なんてなかった"
 			tasks: [{
 				id: "7AFADB79BF632F99"
-				item: {
-					Count: 1
-					id: "ae2:flawless_budding_quartz"
-					tag: { }
-				}
+				item: "ae2:flawless_budding_quartz"
 				type: "item"
 			}]
 			x: -2.0d
@@ -293,13 +270,15 @@
 		{
 			dependencies: ["2222120D1B1E679D"]
 			id: "09C20477EF4F63CF"
+			rewards: [{
+				id: "1DC79802B72D0B46"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			subtitle: "謎技術"
 			tasks: [{
 				id: "1FAE0BA6C97C2528"
-				item: {
-					Count: 1
-					id: "ae2:mysterious_cube"
-					tag: { }
-				}
+				item: "ae2:mysterious_cube"
 				type: "item"
 			}]
 			x: -2.0d
@@ -311,32 +290,25 @@
 				"09C20477EF4F63CF"
 			]
 			id: "503CF531934055CD"
+			rewards: [{
+				id: "389020CE2B4FCD2B"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "52176CFF76B2BCEF"
-					item: {
-						Count: 1
-						id: "ae2:logic_processor"
-						tag: { }
-					}
+					item: "ae2:logic_processor"
 					type: "item"
 				}
 				{
 					id: "77E1A7FC3CC33B3F"
-					item: {
-						Count: 1
-						id: "ae2:calculation_processor"
-						tag: { }
-					}
+					item: "ae2:calculation_processor"
 					type: "item"
 				}
 				{
 					id: "1890FB940734C5C9"
-					item: {
-						Count: 1
-						id: "ae2:engineering_processor"
-						tag: { }
-					}
+					item: "ae2:engineering_processor"
 					type: "item"
 				}
 			]
@@ -346,48 +318,44 @@
 		{
 			dependencies: ["016780D32B1ABC49"]
 			id: "5F6F701816107E28"
+			rewards: [{
+				id: "5B710D1CE6214E3F"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			subtitle: "べたべた"
 			tasks: [
 				{
 					id: "704B12C6B3454D1A"
-					item: {
-						Count: 1
-						id: "integrateddynamics:drying_basin"
-						tag: { }
-					}
+					item: "integrateddynamics:drying_basin"
 					type: "item"
 				}
 				{
 					id: "3D5F1894479D512F"
-					item: {
-						Count: 1
-						id: "minecraft:milk_bucket"
-						tag: { }
-					}
+					item: "minecraft:milk_bucket"
 					type: "item"
 				}
 				{
 					id: "4C9CE83D27C23AF3"
-					item: {
-						Count: 1
-						id: "minecraft:slime_ball"
-						tag: { }
-					}
+					item: "minecraft:slime_ball"
 					type: "item"
 				}
 			]
 			x: -4.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["503CF531934055CD"]
 			id: "13697F0024B3E315"
+			rewards: [{
+				id: "7E31006C5ED0E85E"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			subtitle: "突然要求されるAE回路"
 			tasks: [{
 				id: "247478230D473B87"
-				item: {
-					Count: 1
-					id: "mekanism:basic_control_circuit"
-					tag: { }
-				}
+				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
 			x: 0.0d
@@ -396,13 +364,15 @@
 		{
 			dependencies: ["68335D23BF84FEE3"]
 			id: "4E1C88D7480C205E"
+			rewards: [{
+				id: "01B0812DB6CFB2C3"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			subtitle: "コスト9倍"
 			tasks: [{
 				id: "0C8424CF566571A6"
-				item: {
-					Count: 1
-					id: "mekanism:steel_casing"
-					tag: { }
-				}
+				item: "mekanism:steel_casing"
 				type: "item"
 			}]
 			x: 0.0d
@@ -414,23 +384,21 @@
 				"4E1C88D7480C205E"
 			]
 			id: "0EE8A78C4EFA5BB8"
+			rewards: [{
+				count: 2
+				id: "718CE9CACCA731F2"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "12E81BCCB02B32D5"
-					item: {
-						Count: 1
-						id: "mekanism:enrichment_chamber"
-						tag: { }
-					}
+					item: "mekanism:enrichment_chamber"
 					type: "item"
 				}
 				{
 					id: "30355C5A3FD5AC2B"
-					item: {
-						Count: 1
-						id: "mekanism:crusher"
-						tag: { }
-					}
+					item: "mekanism:crusher"
 					type: "item"
 				}
 			]
@@ -440,13 +408,15 @@
 		{
 			dependencies: ["0EE8A78C4EFA5BB8"]
 			id: "24A7B7094ED357E9"
+			rewards: [{
+				count: 2
+				id: "11CC6842CAF4ED20"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "432F5C271294B04E"
-				item: {
-					Count: 1
-					id: "mekanism:advanced_control_circuit"
-					tag: { }
-				}
+				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
 			x: 2.0d
@@ -455,13 +425,14 @@
 		{
 			dependencies: ["24A7B7094ED357E9"]
 			id: "342D8A0D183D1E23"
+			rewards: [{
+				id: "24136D6043E99014"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B01698102D7E3EF"
-				item: {
-					Count: 1
-					id: "mekanism:pressurized_reaction_chamber"
-					tag: { }
-				}
+				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
 			x: 2.0d
@@ -470,13 +441,15 @@
 		{
 			dependencies: ["18EF09B75E5B4CFC"]
 			id: "38F0D9673E24BE74"
+			rewards: [{
+				count: 3
+				id: "57BBAFD298937EB6"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "54B195626952D9B1"
-				item: {
-					Count: 1
-					id: "mekanism:elite_control_circuit"
-					tag: { }
-				}
+				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
 			x: 4.0d
@@ -485,13 +458,15 @@
 		{
 			dependencies: ["24A7B7094ED357E9"]
 			id: "18EF09B75E5B4CFC"
+			rewards: [{
+				count: 2
+				id: "4A669454B49D2F07"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2CF4F7C9B073F03F"
-				item: {
-					Count: 1
-					id: "mekanism:purification_chamber"
-					tag: { }
-				}
+				item: "mekanism:purification_chamber"
 				type: "item"
 			}]
 			x: 4.0d
@@ -500,13 +475,15 @@
 		{
 			dependencies: ["38F0D9673E24BE74"]
 			id: "61D9BE79FEB34259"
+			rewards: [{
+				count: 2
+				id: "506DD28BA39B348A"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "718F0D16D48F27C4"
-				item: {
-					Count: 1
-					id: "mekanism:chemical_injection_chamber"
-					tag: { }
-				}
+				item: "mekanism:chemical_injection_chamber"
 				type: "item"
 			}]
 			x: 6.0d
@@ -515,13 +492,15 @@
 		{
 			dependencies: ["61D9BE79FEB34259"]
 			id: "7F5BC9CABAE2CB00"
+			rewards: [{
+				count: 3
+				id: "398A61C4584BDEB4"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3AA9CD5BBD865418"
-				item: {
-					Count: 1
-					id: "mekanism:ultimate_control_circuit"
-					tag: { }
-				}
+				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
 			x: 6.0d
@@ -530,23 +509,21 @@
 		{
 			dependencies: ["7F5BC9CABAE2CB00"]
 			id: "64310B544BDC74D0"
+			rewards: [{
+				count: 4
+				id: "043F5DD73435B145"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1949A59CAE24BE87"
-					item: {
-						Count: 1
-						id: "mekanism:chemical_dissolution_chamber"
-						tag: { }
-					}
+					item: "mekanism:chemical_dissolution_chamber"
 					type: "item"
 				}
 				{
 					id: "34E8749D13B7183E"
-					item: {
-						Count: 1
-						id: "mekanism:isotopic_centrifuge"
-						tag: { }
-					}
+					item: "mekanism:isotopic_centrifuge"
 					type: "item"
 				}
 			]
@@ -559,13 +536,14 @@
 				"342D8A0D183D1E23"
 			]
 			id: "7ED68F17797155BB"
+			rewards: [{
+				id: "18B8A1C38D856D15"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "222546AA95EA5460"
-				item: {
-					Count: 1
-					id: "mekanismgenerators:gas_burning_generator"
-					tag: { }
-				}
+				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
 			}]
 			x: 8.0d
@@ -574,13 +552,14 @@
 		{
 			dependencies: ["7ED68F17797155BB"]
 			id: "55BC5FEC8F4AE878"
+			rewards: [{
+				id: "32020FFFE10F283C"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6AC4BB9887D6DB05"
-				item: {
-					Count: 1
-					id: "mek1000:advanced_gas_burning_generator"
-					tag: { }
-				}
+				item: "mek1000:advanced_gas_burning_generator"
 				type: "item"
 			}]
 			x: 10.0d
@@ -589,28 +568,47 @@
 		{
 			dependencies: ["503CF531934055CD"]
 			id: "4CA94C9C9F1B7FE5"
+			rewards: [{
+				count: 2
+				id: "68C4A4FEDDC6307F"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4AD10437245D3323"
-					item: {
-						Count: 1
-						id: "megacells:accumulation_processor_press"
-						tag: { }
-					}
+					item: "megacells:accumulation_processor_press"
 					type: "item"
 				}
 				{
 					id: "1E64A12432005929"
-					item: {
-						Count: 1
-						id: "megacells:accumulation_processor"
-						tag: { }
-					}
+					item: "megacells:accumulation_processor"
 					type: "item"
 				}
 			]
 			x: -2.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["2222120D1B1E679D"]
+			id: "2E4A177EF279802F"
+			subtitle: "アメジストにも使えます"
+			tasks: [
+				{
+					count: 4L
+					id: "0F5AD99F64797A72"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "253A898A8AD91E46"
+					item: { Count: 4, id: "ae2:crystal_resonance_generator" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 1.0d
 		}
 	]
 	title: "チャプター1"

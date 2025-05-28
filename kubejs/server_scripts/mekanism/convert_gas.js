@@ -18,6 +18,14 @@ ServerEvents.recipes(event => {
     replaceGases('tin')
     replaceGases('diamond')
 
+    event.custom({
+        type: 'mekanism:infusion_conversion',
+        input: {
+            'ingredient': { 'tag': "forge:ingots/tin" }
+        },
+        output: { 'infuse_type': `mekanism:tin`, 'amount': 10 }
+    })
+
     event.remove({ id: `mekanism_extras:infusion_conversion/radiance/from_enriched` })
     event.custom({
         type: 'mekanism:infusion_conversion',

@@ -106,5 +106,7 @@
   "mysticalagradditions:infused_farmland": null,
   "mysticalagriculture:crop": null,
   "mysticalagriculture:inferium_crop": null,
-  "mysticalagriculture:infused_farmland": null
+  "mysticalagriculture:infused_farmland": null,
+  "uti:entity_name": null,
+  "uti:object_name": null
 }

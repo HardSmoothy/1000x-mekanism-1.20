@@ -10,11 +10,7 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: {
-		Count: 1
-		id: "mek1000:stray_cat"
-		tag: { }
-	}
+	icon: "mek1000:stray_cat"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0

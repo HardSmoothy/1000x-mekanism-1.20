@@ -1,0 +1,210 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	filename: "49FA89501EA9582C"
+	group: "7955F24567DE4319"
+	icon: "mek1000:cat_coin"
+	id: "49FA89501EA9582C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:leather"
+			id: "39700E836B108A8B"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			rewards: [{
+				count: 32
+				id: "5ED29565E313E4A3"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "0B878297AF90EC99"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			title: "革"
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["296399230B63F479"]
+			icon: "minecraft:blast_furnace"
+			id: "0DC0CA15548BA09E"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			rewards: [{
+				count: 32
+				id: "0E040D8D68F03F43"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "230423374FBF0EB1"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			title: "溶鉱炉"
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: false
+			id: "034F6D726270FF6C"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			tasks: [{
+				id: "0044E9FD9496EB13"
+				title: "ショップについて"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			can_repeat: false
+			id: "53AB2C46F079F376"
+			optional: true
+			tasks: [{
+				id: "4501AD96B6D4367D"
+				title: "ショップ縛りしたい人へ"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["503CF531934055CD"]
+			icon: "ae2:logic_processor"
+			id: "57B3CA6AC78664F7"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "0B9BF59E6DB68E45"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1FEEE23773BD5E20"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1AE17B93E741A5C7"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "52152448D967D065"
+				item: { Count: 3, id: "mek1000:cat_coin" }
+				type: "item"
+			}]
+			title: "回路3点セット"
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["13697F0024B3E315"]
+			icon: "mekanism:basic_control_circuit"
+			id: "576921F5B2FA4341"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			rewards: [{
+				count: 4
+				id: "51678A3F68013011"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "65467F0829DCAEA8"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			title: "基本制御回路"
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["24A7B7094ED357E9"]
+			icon: "mekanism:advanced_control_circuit"
+			id: "425A78E33BEAAF97"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			rewards: [{
+				count: 4
+				id: "3269F50878EBEA37"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "4ED24B669F86410D"
+				item: { Count: 2, id: "mek1000:cat_coin" }
+				type: "item"
+			}]
+			title: "発展制御回路"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38F0D9673E24BE74"]
+			icon: "mekanism:elite_control_circuit"
+			id: "52E26787EB0DE06B"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			rewards: [{
+				count: 2
+				id: "699292DAD5AAA3DA"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "56F228052BA87D2D"
+				item: "mek1000:cat_coin"
+				type: "item"
+			}]
+			title: "精鋭制御回路"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7F5BC9CABAE2CB00"]
+			icon: "mekanism:ultimate_control_circuit"
+			id: "6F15C7657EBA44ED"
+			incompatible: ["53AB2C46F079F376"]
+			optional: true
+			rewards: [{
+				count: 2
+				id: "709BE20AA84A16CD"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "03B7C172F09DA768"
+				item: { Count: 5, id: "mek1000:cat_coin" }
+				type: "item"
+			}]
+			title: "究極制御回路"
+			x: -0.5d
+			y: -2.0d
+		}
+	]
+	title: "ショップ"
+}

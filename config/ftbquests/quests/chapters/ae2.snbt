@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae2"
+	group: "7955F24567DE4319"
+	icon: "ae2:controller"
+	id: "797F5C220099BEC3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "AE2"
+}

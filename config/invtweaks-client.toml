@@ -104,6 +104,10 @@
 		containerClass = "aztech.modern_industrialization.*.gui.*Screen"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "net.pedroksl.advanced_ae.client.gui.*"
+		sortRange = ""
+
 	#Categor(y/ies) for sorting
 	#
 	#name: the name of the category

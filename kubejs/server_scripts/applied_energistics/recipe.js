@@ -10,6 +10,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.mekanismMetallurgicInfusing('ae2:mysterious_cube', 'ae2:chiseled_quartz_block', '1000x mekanism:tin')
 
+    event.recipes.mekanismMetallurgicInfusing('ae2:sky_dust', 'fluxnetworks:flux_dust', '10x mekanism:diamond')
+
 
     event.custom({
         "type": "expatternprovider:circuit_cutter",
@@ -48,5 +50,21 @@ ServerEvents.recipes(event => {
         'CCC'
     ], {
         C: 'appflux:charged_redstone'
+    })
+
+    event.remove({ output: 'expatternprovider:circuit_cutter' })
+    event.shaped(Item.of('expatternprovider:circuit_cutter'), [
+        'GCG',
+        'BMD',
+        'ATE'
+    ], {
+        A: 'advanced_ae:quantum_processor',
+        B: 'ae2:logic_processor',
+        C: 'megacells:accumulation_processor',
+        D: 'appflux:energy_processor',
+        E: 'ae2:engineering_processor',
+        G: 'expatternprovider:assembler_matrix_glass',
+        M: 'minecraft:stonecutter',
+        T: 'mekanism:elite_fluid_tank'
     })
 })
