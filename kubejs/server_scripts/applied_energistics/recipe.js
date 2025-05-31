@@ -67,4 +67,6 @@ ServerEvents.recipes(event => {
         M: 'minecraft:stonecutter',
         T: 'mekanism:elite_fluid_tank'
     })
+
+    event.remove({ output: 'expatternprovider:fishbig' })
 })

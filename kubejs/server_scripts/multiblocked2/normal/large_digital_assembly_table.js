@@ -543,7 +543,7 @@ ServerEvents.recipes((event) => {
             )
         )
         .slotName("s0", builder => builder
-            .inputItems('6x mek1000:infinity_ingot')
+            .inputItems('8x mek1000:infinity_ingot')
         )
         .slotName("s1", builder => builder
             .inputItems('mek1000:infinite_super_circuit')
@@ -552,7 +552,7 @@ ServerEvents.recipes((event) => {
             .inputItems('mek1000:infinite_super_circuit')
         )
         .slotName("s3", builder => builder
-            .inputItems('6x mek1000:infinity_ingot')
+            .inputItems('8x mek1000:infinity_ingot')
         )
         .slotName("s4", builder => builder
             .inputItems('mek1000:infinite_super_circuit')
@@ -579,7 +579,7 @@ ServerEvents.recipes((event) => {
             .inputItems('mek1000:infinite_super_circuit')
         )
         .slotName("s12", builder => builder
-            .inputItems('6x mek1000:infinity_ingot')
+            .inputItems('8x mek1000:infinity_ingot')
         )
         .slotName("s13", builder => builder
             .inputItems('mek1000:infinite_super_circuit')
@@ -588,7 +588,7 @@ ServerEvents.recipes((event) => {
             .inputItems('mek1000:infinite_super_circuit')
         )
         .slotName("s15", builder => builder
-            .inputItems('6x mek1000:infinity_ingot')
+            .inputItems('8x mek1000:infinity_ingot')
         )
 
     event.recipes.mek1000.large_digital_assemble()

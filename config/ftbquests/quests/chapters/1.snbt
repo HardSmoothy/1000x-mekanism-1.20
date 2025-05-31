@@ -5,10 +5,23 @@
 	group: "29F87984A1A84EBA"
 	icon: "minecraft:oak_log"
 	id: "6B1C4E8298A2900E"
+	images: [{
+		height: 5.0d
+		image: "mek1000:textures/gui/icon.png"
+		rotation: 0.0d
+		width: 5.0d
+		x: 0.0d
+		y: -7.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"7F4B21A42724338C"
+				"5C124BC2B5689E7B"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"このModpackはこのような特徴を持っています"
 				"&a・消費電力が1000倍にされたMekanismの機械たち&r"
@@ -22,7 +35,20 @@
 				""
 				"なるべく耐えてくださいね"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "016780D32B1ABC49"
+			rewards: [{
+				id: "6AF50FC499C0E0C3"
+				item: {
+					Count: 1
+					id: "mekanismtools:refined_obsidian_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "1.20アップデート"
 			tasks: [{
 				id: "3604615BBDCBBC95"
@@ -30,9 +56,10 @@
 			}]
 			title: "桁違いな電力へようこそ"
 			x: 0.0d
-			y: -3.0d
+			y: -13.0d
 		}
 		{
+			dependencies: ["016780D32B1ABC49"]
 			description: [
 				"1.20へポートする上で以下の要素が変更されています"
 				""
@@ -63,8 +90,8 @@
 				type: "checkmark"
 			}]
 			title: "1.18版の経験者へ"
-			x: 0.0d
-			y: -4.5d
+			x: -2.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -75,11 +102,20 @@
 				"また、このModpackでは鉱石が木レベルのツールで掘れるようになっています"
 			]
 			id: "296399230B63F479"
-			rewards: [{
-				id: "48344FE6AEB755FE"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "6061523ECB76A9F1"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "64924DB9C5F6D89B"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+			]
 			subtitle: "一括破壊"
 			tasks: [
 				{
@@ -114,8 +150,8 @@
 				}
 			]
 			title: "基本素材を集める"
-			x: 0.0d
-			y: -1.0d
+			x: 2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -126,8 +162,9 @@
 			]
 			id: "68760385B1DE4302"
 			rewards: [{
-				id: "07FD72833323958E"
-				item: "mek1000:cat_coin"
+				count: 3
+				id: "43728411F9DB8DB7"
+				item: "botanypots:terracotta_hopper_botany_pot"
 				type: "item"
 			}]
 			subtitle: "盆栽シミュレーター"
@@ -143,8 +180,9 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -3.0d
+			title: "Botany Potを作る"
+			x: 0.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -156,8 +194,9 @@
 			]
 			id: "6FB7FFBB57D7E799"
 			rewards: [{
-				id: "5DCEA49FB0D09CB3"
-				item: "mek1000:cat_coin"
+				count: 16
+				id: "34E1447E3BD60861"
+				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
 			subtitle: "多分いちばん使いやすい"
@@ -175,8 +214,8 @@
 				}
 			]
 			title: "バックパックを作る"
-			x: 2.0d
-			y: -1.0d
+			x: 1.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["6FB7FFBB57D7E799"]
@@ -187,11 +226,6 @@
 				"&aAdvanced Compacting Upgrade&rは装着すると3x3や2x2のレシピで自動圧縮を行ってくれます"
 			]
 			id: "05F676E3893ACC4D"
-			rewards: [{
-				id: "6E59EDE2413AB6D1"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
 			subtitle: "マグネットModの代わり"
 			tasks: [
 				{
@@ -206,16 +240,17 @@
 				}
 			]
 			title: "バックパックの強化"
-			x: 4.0d
-			y: -1.0d
+			x: 3.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["296399230B63F479"]
 			description: ["最初の機械である&a冶金吹き込み機&rを稼働させるには256台の風力発電機が必要です"]
 			id: "3F9B706BE86D157B"
 			rewards: [{
-				id: "329E45488C9DB771"
-				item: "mek1000:cat_coin"
+				count: 256
+				id: "5C54A266C6C57FA8"
+				item: "mekanism_extras:absolute_universal_cable"
 				type: "item"
 			}]
 			subtitle: "足りません"
@@ -226,8 +261,8 @@
 				type: "item"
 			}]
 			title: "風力発電機を作る"
-			x: 0.0d
-			y: 1.0d
+			x: 2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3F9B706BE86D157B"]
@@ -236,65 +271,87 @@
 				"制作コストが&c9倍になっています&r"
 			]
 			id: "68335D23BF84FEE3"
-			rewards: [{
-				id: "302F69189C4713A4"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "0B99B50CAB1B38A5"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "100FC1F7A03DD776"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+			]
 			subtitle: "初めての機械"
 			tasks: [{
 				id: "76C8CE2EB8D24328"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
+			title: "冶金吹込み機を作る"
 			x: 0.0d
-			y: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["68335D23BF84FEE3"]
 			id: "2222120D1B1E679D"
-			rewards: [{
-				id: "718B03796B2C0B51"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "109C322DBFB6D3B2"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "04E4022343440CDB"
+					item: "ae2:crystal_resonance_generator"
+					type: "item"
+				}
+			]
 			subtitle: "隕石なんてなかった"
-			tasks: [{
-				id: "7AFADB79BF632F99"
-				item: "ae2:flawless_budding_quartz"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 3.0d
+			tasks: [
+				{
+					id: "7AFADB79BF632F99"
+					item: "ae2:flawless_budding_quartz"
+					type: "item"
+				}
+				{
+					id: "3E9962C49FA4CCBB"
+					item: "ae2:mysterious_cube"
+					type: "item"
+				}
+			]
+			title: "ケルタスクオーツと神秘的なキューブを作る"
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2222120D1B1E679D"]
-			id: "09C20477EF4F63CF"
-			rewards: [{
-				id: "1DC79802B72D0B46"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
-			subtitle: "謎技術"
-			tasks: [{
-				id: "1FAE0BA6C97C2528"
-				item: "ae2:mysterious_cube"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"5F6F701816107E28"
-				"09C20477EF4F63CF"
-			]
 			id: "503CF531934055CD"
-			rewards: [{
-				id: "389020CE2B4FCD2B"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 63
+					id: "6BA76F49899B4099"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					count: 63
+					id: "65A1B26DD4949CFF"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					count: 63
+					id: "3457CB55AD803262"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "52176CFF76B2BCEF"
@@ -312,15 +369,17 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 7.0d
+			title: "AE2のプロセッサを作る"
+			x: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
 			id: "5F6F701816107E28"
 			rewards: [{
-				id: "5B710D1CE6214E3F"
-				item: "mek1000:cat_coin"
+				count: 8
+				id: "6839D5D41E446820"
+				item: "minecraft:slime_ball"
 				type: "item"
 			}]
 			subtitle: "べたべた"
@@ -341,15 +400,16 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 1.0d
+			x: -1.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["503CF531934055CD"]
 			id: "13697F0024B3E315"
 			rewards: [{
-				id: "7E31006C5ED0E85E"
-				item: "mek1000:cat_coin"
+				count: 15
+				id: "41CE68C75876D924"
+				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
 			subtitle: "突然要求されるAE回路"
@@ -358,15 +418,17 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.0d
+			title: "基本制御回路を作る"
+			x: -2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["68335D23BF84FEE3"]
 			id: "4E1C88D7480C205E"
 			rewards: [{
-				id: "01B0812DB6CFB2C3"
-				item: "mek1000:cat_coin"
+				count: 15
+				id: "2D69BE4CA49CAE84"
+				item: "mekanism:steel_casing"
 				type: "item"
 			}]
 			subtitle: "コスト9倍"
@@ -375,8 +437,9 @@
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			title: "鋼鉄ケーシングを作る"
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -384,12 +447,21 @@
 				"4E1C88D7480C205E"
 			]
 			id: "0EE8A78C4EFA5BB8"
-			rewards: [{
-				count: 2
-				id: "718CE9CACCA731F2"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7977219328A2013F"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2D13E1559C77490D"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+			]
+			subtitle: "鉱石6倍化が解禁"
 			tasks: [
 				{
 					id: "12E81BCCB02B32D5"
@@ -402,49 +474,48 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 6.0d
+			title: "濃縮室と粉砕機を作る"
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EE8A78C4EFA5BB8"]
 			id: "24A7B7094ED357E9"
 			rewards: [{
-				count: 2
-				id: "11CC6842CAF4ED20"
-				item: "mek1000:cat_coin"
+				count: 3
+				id: "6FDFFCB097D399B7"
+				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
+			subtitle: "赤石の消費量"
 			tasks: [{
 				id: "432F5C271294B04E"
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			title: "発展制御回路を作る"
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["24A7B7094ED357E9"]
 			id: "342D8A0D183D1E23"
-			rewards: [{
-				id: "24136D6043E99014"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
 			tasks: [{
 				id: "3B01698102D7E3EF"
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
+			title: "加圧反応室を作る"
 			x: 2.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["18EF09B75E5B4CFC"]
 			id: "38F0D9673E24BE74"
 			rewards: [{
 				count: 3
-				id: "57BBAFD298937EB6"
-				item: "mek1000:cat_coin"
+				id: "343214A61071972C"
+				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
 			tasks: [{
@@ -452,50 +523,42 @@
 				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			title: "精鋭制御回路を作る"
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["24A7B7094ED357E9"]
 			id: "18EF09B75E5B4CFC"
-			rewards: [{
-				count: 2
-				id: "4A669454B49D2F07"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			subtitle: "鉱石24倍化が解禁"
 			tasks: [{
 				id: "2CF4F7C9B073F03F"
 				item: "mekanism:purification_chamber"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			title: "浄化室を作る"
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["38F0D9673E24BE74"]
 			id: "61D9BE79FEB34259"
-			rewards: [{
-				count: 2
-				id: "506DD28BA39B348A"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			subtitle: "鉱石96倍化が解禁"
 			tasks: [{
 				id: "718F0D16D48F27C4"
 				item: "mekanism:chemical_injection_chamber"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			title: "化学注入室を作る"
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["61D9BE79FEB34259"]
 			id: "7F5BC9CABAE2CB00"
 			rewards: [{
-				count: 3
-				id: "398A61C4584BDEB4"
-				item: "mek1000:cat_coin"
+				id: "0DBF4429DFAF7CD0"
+				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
 			tasks: [{
@@ -503,16 +566,17 @@
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			title: "究極制御回路を作る"
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7F5BC9CABAE2CB00"]
 			id: "64310B544BDC74D0"
 			rewards: [{
 				count: 4
-				id: "043F5DD73435B145"
-				item: "mek1000:cat_coin"
+				id: "50264E3A78E1EF42"
+				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
 			tasks: [
@@ -527,8 +591,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: 6.0d
+			x: -2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -536,44 +600,29 @@
 				"342D8A0D183D1E23"
 			]
 			id: "7ED68F17797155BB"
-			rewards: [{
-				id: "18B8A1C38D856D15"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
 			tasks: [{
 				id: "222546AA95EA5460"
 				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7ED68F17797155BB"]
 			id: "55BC5FEC8F4AE878"
-			rewards: [{
-				id: "32020FFFE10F283C"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
+			subtitle: "つよい発電機その1"
 			tasks: [{
 				id: "6AC4BB9887D6DB05"
 				item: "mek1000:advanced_gas_burning_generator"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.0d
+			x: 4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["503CF531934055CD"]
 			id: "4CA94C9C9F1B7FE5"
-			rewards: [{
-				count: 2
-				id: "68C4A4FEDDC6307F"
-				item: "mek1000:cat_coin"
-				type: "item"
-			}]
 			tasks: [
 				{
 					id: "4AD10437245D3323"
@@ -586,8 +635,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 9.0d
+			x: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2222120D1B1E679D"]
@@ -607,9 +656,41 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 1.0d
+			title: "成長加速器を作る"
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			description: ["&aExDeorum&rが導入されていますが、ハンマー以外のレシピは削除されています"]
+			id: "4E84A725FB985753"
+			rewards: [{
+				id: "02070DC4220BF12A"
+				item: {
+					Count: 1
+					id: "exdeorum:compressed_diamond_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Skyblock以外で使わなそうなやつ"
+			tasks: [{
+				id: "30FC0F5DB738D7A5"
+				item: {
+					Count: 1
+					id: "exdeorum:diamond_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.5d
 		}
 	]
+	subtitle: ["\"桁違い\"な旅路の始まり"]
 	title: "チャプター1"
 }

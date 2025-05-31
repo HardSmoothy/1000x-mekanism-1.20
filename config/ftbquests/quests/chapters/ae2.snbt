@@ -7,6 +7,46 @@
 	id: "797F5C220099BEC3"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["503CF531934055CD"]
+			icon: "sophisticatedstorage:survival_infinity_upgrade"
+			id: "092854B5937D5094"
+			optional: true
+			rewards: [{
+				command: "/ae2 channelmode infinite"
+				id: "7F028A45FE41565D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "138485C252A793BE"
+				type: "checkmark"
+			}]
+			title: "チャンネル切り替え : 無限"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["503CF531934055CD"]
+			icon: "ae2:mysterious_cube"
+			id: "019118B4B2406698"
+			optional: true
+			rewards: [{
+				command: "/ae2 channelmode default"
+				id: "4FB4BDDB6598785B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "389E7CD2E923FD9A"
+				type: "checkmark"
+			}]
+			title: "チャンネル切り替え : デフォルト"
+			x: -1.5d
+			y: -4.0d
+		}
+	]
+	subtitle: ["なんでもかんでも電子化の時代"]
 	title: "AE2"
 }

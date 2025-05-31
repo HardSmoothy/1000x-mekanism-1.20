@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
         ingredient3:
             { item: 'minecraft:soul_sand' }
         ,
-        count3: 1,
+        count3: 4,
         result:
             { item: 'minecraft:nether_star', count: 1 }
         ,
@@ -95,4 +95,25 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.mekanism.enriching("minecraft:skeleton_skull", "minecraft:bone_block")
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'experienceobelisk:astute_assembly' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'exdeorum:compressed_netherrack' }
+        ,
+        count2: 32,
+        ingredient3:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count3: 1,
+        result:
+            { item: 'minecraft:netherite_upgrade_smithing_template', count: 1 }
+        ,
+        cost: 5000,
+        processTime: 1000
+    })
 })
