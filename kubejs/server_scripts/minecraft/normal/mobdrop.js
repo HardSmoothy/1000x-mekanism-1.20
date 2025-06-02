@@ -15,6 +15,16 @@ ServerEvents.recipes(event => {
         })
     }
 
+    event.shaped('minecraft:spawner', [
+        'IBI',
+        'BLB',
+        'IBI'
+    ], {
+        I: '#forge:ingots/iron',
+        B: 'minecraft:iron_bars',
+        L: 'minecraft:iron_block'
+    })
+
     drying('minecraft:slime_ball', 'minecraft:milk', 500, 100)
 
     event.recipes.mekanism.crushing('2x minecraft:ender_pearl', 'integrateddynamics:proto_chorus')

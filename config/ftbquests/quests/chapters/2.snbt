@@ -5,7 +5,7 @@
 	group: "29F87984A1A84EBA"
 	icon: "mek1000:infinity_fusion_controller"
 	id: "676332C29FA0BFF1"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "5D601859CCB35AD7"
@@ -137,17 +137,26 @@
 		}
 		{
 			dependencies: [
-				"4AC7A15037888397"
+				"3EE1C779AEB0D16D"
 				"3FC57EAE35A4448E"
 			]
+			description: ["&aSilicon Uranium Fuel&rを燃料にして発電します"]
 			id: "0A5CBA30DFD5CDE7"
-			tasks: [{
-				id: "2D0D3418D8AA2BA1"
-				item: "mekanism_extras:naquadah_reactor_controller"
-				type: "item"
-			}]
+			subtitle: "超強化済み"
+			tasks: [
+				{
+					id: "2D0D3418D8AA2BA1"
+					item: "mekanism_extras:naquadah_reactor_controller"
+					type: "item"
+				}
+				{
+					id: "6D7828A4F6211542"
+					item: "mekanism_extras:naquadah_hohlraum"
+					type: "item"
+				}
+			]
 			x: -3.5d
-			y: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3FC57EAE35A4448E"]
@@ -158,7 +167,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["16F1DD1570039FA7"]

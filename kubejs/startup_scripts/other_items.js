@@ -16,6 +16,4 @@ StartupEvents.registry("item", event => {
     event.create('mek1000:infinity_ingot').texture('mek1000:item/infinity_ingot')
 
     event.create('mek1000:ultimate_dye_base').texture('mekanism:item/dye_base').glow(true)
-
-    event.create('mek1000:cat_coin')
 })

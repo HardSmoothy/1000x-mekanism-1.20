@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         event.remove({ output: item })
     })
 
-    event.shaped('sophisticatedbackpacks:stack_upgrade_tier_4', [
+    event.shaped('3x sophisticatedbackpacks:stack_upgrade_tier_4', [
         'CCC',
         'CBC',
         'CCC'

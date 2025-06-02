@@ -48,6 +48,27 @@
 			x: 0.0d
 			y: -3.0d
 		}
+		{
+			id: "58D19A0956CF8EDC"
+			rewards: [{
+				auto: "invisible"
+				id: "4F98C64C35FA5B0C"
+				ignore_reward_blocking: true
+				stage: "skyblock"
+				type: "gamestage"
+			}]
+			secret: true
+			tasks: [{
+				biome: "minecraft:the_void"
+				disable_toast: true
+				id: "3E020EAD90DC99A3"
+				secret: true
+				type: "biome"
+			}]
+			title: "空島モード"
+			x: -3.0d
+			y: -3.0d
+		}
 	]
 	title: "モード選択"
 }

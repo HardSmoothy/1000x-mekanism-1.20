@@ -160,5 +160,15 @@ ServerEvents.recipes(event => {
         }
     })
 
-
+    event.remove({ output: 'mekanism_extras:naquadah_reactor_controller' })
+    event.shaped('mekanism_extras:naquadah_reactor_controller', [
+        'CGC',
+        'BTB',
+        'BBB'
+    ], {
+        T: 'mekanism_extras:absolute_chemical_tank',
+        G: '#forge:glass_panes',
+        B: 'mekanism_extras:naquadah_reactor_casing',
+        C: 'mekanism_extras:infinite_control_circuit'
+    })
 })

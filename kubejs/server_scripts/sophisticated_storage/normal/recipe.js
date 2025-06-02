@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         C: '#forge:chests/wooden'
     })
 
-    event.shaped('sophisticatedstorage:stack_upgrade_tier_5', [
+    event.shaped('3x sophisticatedstorage:stack_upgrade_tier_5', [
         'CCC',
         'CBC',
         'CCC'

@@ -13,7 +13,7 @@
 		x: 0.0d
 		y: -7.5d
 	}]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -38,17 +38,43 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "016780D32B1ABC49"
-			rewards: [{
-				id: "6AF50FC499C0E0C3"
-				item: {
-					Count: 1
-					id: "mekanismtools:refined_obsidian_paxel"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "6AF50FC499C0E0C3"
+					item: {
+						Count: 1
+						id: "mekanismtools:refined_obsidian_paxel"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "4FBD11F7B76ADE17"
+					ignore_reward_blocking: true
+					item: {
+						Count: 1
+						id: "capsule:capsule"
+						tag: {
+							author: "?"
+							canRotate: 0b
+							color: 16777215
+							display: {
+								color: 7105644
+							}
+							isReward: 1b
+							label: "base"
+							oneUse: 1b
+							size: 5
+							state: 5
+							structureName: "minecraft:config/capsule/rewards/base"
+						}
+					}
+					team_reward: true
+					type: "item"
+				}
+			]
 			subtitle: "1.20アップデート"
 			tasks: [{
 				id: "3604615BBDCBBC95"
@@ -297,6 +323,7 @@
 		}
 		{
 			dependencies: ["68335D23BF84FEE3"]
+			description: ["&a神秘的なキューブ&rを破壊することで金型を入手できます"]
 			id: "2222120D1B1E679D"
 			rewards: [
 				{
@@ -352,6 +379,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "ME倉庫を拡張しよう"
 			tasks: [
 				{
 					id: "52176CFF76B2BCEF"
@@ -579,6 +607,7 @@
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
+			subtitle: "Modpack監督を燃やそう"
 			tasks: [
 				{
 					id: "1949A59CAE24BE87"
@@ -591,6 +620,7 @@
 					type: "item"
 				}
 			]
+			title: "核燃料製造セットを作る"
 			x: -2.0d
 			y: 8.0d
 		}
@@ -689,6 +719,31 @@
 			}]
 			x: 1.5d
 			y: -10.5d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			description: [
+				"&aFTB Essentials&rによって便利なコマンドが追加されています"
+				""
+				"/sethome <名前>"
+				"ホームポイントをセットします"
+				""
+				"/home <名前>"
+				"ホームポイントへワープします"
+				""
+				"/spawn"
+				"スポーンポイントへワープします"
+			]
+			id: "037FD1B69569861E"
+			optional: true
+			subtitle: "おめーの家、あるから！"
+			tasks: [{
+				id: "73446AE26179E40F"
+				type: "checkmark"
+			}]
+			title: "便利なコマンド"
+			x: 0.0d
+			y: -15.5d
 		}
 	]
 	subtitle: ["\"桁違い\"な旅路の始まり"]
