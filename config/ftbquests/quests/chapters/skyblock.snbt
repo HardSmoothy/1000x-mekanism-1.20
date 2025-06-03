@@ -275,6 +275,20 @@
 			x: 3.0d
 			y: 3.0d
 		}
+		{
+			dependencies: [
+				"17831EE807ACABF4"
+				"41CA9C8B9B90EFA8"
+			]
+			id: "48F3C0EED99D27F9"
+			tasks: [{
+				id: "3F6D88AD7F833CA6"
+				item: "exdeorum:porcelain_crucible"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
 	]
 	subtitle: ["\"桁違い\"な空島"]
 	title: "Skyblock"

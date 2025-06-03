@@ -52,6 +52,17 @@ ServerEvents.recipes(event => {
         D: 'minecraft:diamond'
     })
 
+    event.shaped(Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:i",id:"xtonesreworked:xtone_tile"}}'), [
+        'GBG',
+        'BCB',
+        'DDD'
+    ], {
+        G: 'ae2:quartz_glass',
+        B: 'xtonesreworked:xtone_tile',
+        C: 'ae2:cell_component_16k',
+        D: 'minecraft:diamond'
+    })
+
     event.shaped(Item.of("mek1000:charged_redstone_block"), [
         'CCC',
         'CCC',

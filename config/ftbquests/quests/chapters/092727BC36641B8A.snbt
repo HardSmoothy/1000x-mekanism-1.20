@@ -147,6 +147,11 @@
 				"電力は搬出ポートから取り出せます"
 			]
 			id: "02452CFCADF1EAFF"
+			rewards: [{
+				id: "15CB28E9CAFB78F0"
+				item: "mek1000:energy_output"
+				type: "item"
+			}]
 			subtitle: "つよい発電機その2"
 			tasks: [{
 				id: "7E722D416A7777C0"

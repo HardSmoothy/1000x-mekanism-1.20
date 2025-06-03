@@ -142,6 +142,12 @@
 			]
 			description: ["&aSilicon Uranium Fuel&rを燃料にして発電します"]
 			id: "0A5CBA30DFD5CDE7"
+			rewards: [{
+				count: 32
+				id: "577053E95090A281"
+				item: "mekanism_extras:naquadah_reactor_casing"
+				type: "item"
+			}]
 			subtitle: "超強化済み"
 			tasks: [
 				{
