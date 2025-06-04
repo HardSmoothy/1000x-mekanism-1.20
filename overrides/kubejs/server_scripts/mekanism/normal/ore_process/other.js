@@ -71,6 +71,7 @@ ServerEvents.recipes(event => {
     crystal_disassemble_20("uranium", "mekanism:crystal_uranium", "mek1000:compressed_uranium_crystal")
     crystal_disassemble_20("lead", "mekanism:crystal_lead", "mek1000:compressed_lead_crystal")
     crystal_disassemble_20("iridium", "kubejs:crystal_iridium", "mek1000:compressed_iridium_crystal")
+    crystal_disassemble_20("debri", "kubejs:crystal_debri", "mek1000:compressed_debri_crystal")
 
     // hidden recipe
     event.recipes.mekanism.combining(`25x mek1000:stray_cat`, `mek1000:tiny_antimatter`, 'minecraft:amethyst_shard').id("mek1000:packcat")
@@ -113,6 +114,7 @@ ServerEvents.recipes(event => {
     crystalize_prec("ur", "mekanism:clean_uranium", "mek1000:prec_uranium", "mekanism:crystal_uranium", 20, 20)
     crystalize_prec("pb", "mekanism:clean_lead", "mek1000:prec_lead", "mekanism:crystal_lead", 20, 20)
     crystalize_prec("ir", "kubejs:clean_iridium", "mek1000:prec_iridium", "kubejs:crystal_iridium", 20, 20)
+    crystalize_prec("db", "kubejs:clean_debri", "mek1000:prec_debri", "kubejs:crystal_debri", 20, 20)
 
     crystalize_prec("rs", "mek1000:clean_redstone", "mek1000:prec_redstone", "mek1000:crystal_redstone", 20, 20)
     crystalize_prec("qz", "mek1000:clean_quartz", "mek1000:prec_quartz", "mek1000:crystal_quartz", 20, 20)

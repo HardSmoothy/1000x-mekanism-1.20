@@ -1,5 +1,5 @@
 StartupEvents.registry("item", event => {
-    let types = ["iron", "copper", "gold", "osmium", "tin", "lead", "uranium", "iridium", "redstone", "quartz", "certus_quartz", "fluorite", "coal", "lapis", "diamond", "emerald"]
+    let types = ["iron", "copper", "gold", "osmium", "tin", "lead", "uranium", "iridium", "redstone", "quartz", "certus_quartz", "fluorite", "coal", "lapis", "diamond", "emerald", "debri"]
     types.forEach(type => {
         event // 精製原石
             .create(`mek1000:purified_${type}_rawore`)
@@ -57,6 +57,8 @@ StartupEvents.registry("mekanism:gas", event => {
     event.create(`mek1000:active_lead`).displayName("Active Compressed Lead Gas").color(0xffff80)
     event.create(`mek1000:active_uranium`).displayName("Active Compressed Uranium Gas").color(0xffff80)
     event.create(`mek1000:active_iridium`).displayName("Active Compressed Iridium Gas").color(0xffff80)
+    event.create(`mek1000:active_debri`).displayName("Active Compressed Acient Debri Gas").color(0x9c6a3e)
+
 
     event.create(`mek1000:active_redstone`).displayName("Active Compressed Redstone Gas").color(0xff0f0f)
     event.create(`mek1000:active_quartz`).displayName("Active Compressed Quartz Gas").color(0xffafa0)
@@ -76,6 +78,7 @@ StartupEvents.registry("mekanism:gas", event => {
     event.create(`mek1000:purified_lead`).displayName("Purified Compressed Lead Gas").color(0xffff80)
     event.create(`mek1000:purified_uranium`).displayName("Purified Compressed Uranium Gas").color(0xffff80)
     event.create(`mek1000:purified_iridium`).displayName("Purified Compressed Iridium Gas").color(0xffff80)
+    event.create(`mek1000:purified_debri`).displayName("Purified Compressed Acient Debri Gas").color(0x803c00)
 
     event.create(`mek1000:purified_redstone`).displayName("Purified Compressed Redstone Gas").color(0xff0f0f)
     event.create(`mek1000:purified_quartz`).displayName("Purified Compressed Quartz Gas").color(0xffafa0)

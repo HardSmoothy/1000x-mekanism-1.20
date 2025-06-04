@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     either_processing('lead')
     either_processing('uranium')
 
-    let types = ["iron", "copper", "gold", "osmium", "tin", "lead", "uranium", "iridium"]
+    let types = ["iron", "copper", "gold", "osmium", "tin", "lead", "uranium", "iridium", "debri"]
     types.forEach(type => {
         event.custom({ type: 'mekanism:washing', fluidInput: { 'amount': 50, 'fluid': 'minecraft:water' }, slurryInput: { 'amount': 1, 'slurry': `mek1000:dirty_compressed_${type}` }, output: { 'slurry': `mek1000:clean_compressed_${type}`, 'amount': 10 } })
         event.custom({ type: "mekanism:crystallizing", chemicalType: "slurry", input: { "amount": 200, "slurry": `mek1000:clean_compressed_${type}` }, output: { "item": `mek1000:compressed_${type}_crystal` } })
@@ -98,6 +98,9 @@ ServerEvents.recipes(event => {
     })
     event.recipes.mekanism.purifying(`2x mek1000:compressed_iridium_clump`, `mek1000:compressed_iridium_shard`, '9x mekanism:oxygen')
     event.custom({ "type": "mekanism:crushing", "input": { "ingredient": { "count": 1, "item": `mek1000:compressed_iridium_clump` } }, "output": { "count": 9, "item": `kubejs:dirty_dust_iridium` } })
+
+    event.recipes.mekanism.purifying(`2x mek1000:compressed_debri_clump`, `mek1000:compressed_debri_shard`, '9x mekanism:oxygen')
+    event.custom({ "type": "mekanism:crushing", "input": { "ingredient": { "count": 1, "item": `mek1000:compressed_debri_clump` } }, "output": { "count": 9, "item": `kubejs:dirty_dust_debri` } })
 
     let tag = `#forge:ores/certus_quartz`
     event.recipes.mekanism.enriching(`6x ae2:certus_quartz_crystal`, `mek1000:softore_certus_quartz`) //2.5
@@ -186,6 +189,18 @@ ServerEvents.recipes(event => {
         { type: 'mekanism:washing', fluidInput: { 'amount': 5, 'fluid': 'minecraft:water' }, slurryInput: { 'amount': 1, 'slurry': 'kubejs:dirty_iridium' }, output: { 'slurry': 'kubejs:clean_iridium', 'amount': 10 } },
     )
 
+    event.recipes.mekanism.purifying(`2x kubejs:clump_debri`, `kubejs:shard_debri`, '1x mekanism:oxygen')
+    event.recipes.mekanism.enriching(`8x kubejs:dust_debri`, 'deepdepthnetherite:deepslate_netherite_ore')
+    event.recipes.mekanism.purifying(`32x kubejs:clump_debri`, 'deepdepthnetherite:deepslate_netherite_ore', '1x mekanism:oxygen')
+    event.recipes.mekanism.injecting(`64x kubejs:shard_debri`, 'deepdepthnetherite:deepslate_netherite_ore', '1x mekanism:hydrogen_chloride')
+    event.custom({
+        type: "mekanism:dissolution", itemInput: { "ingredient": { "item": 'deepdepthnetherite:deepslate_netherite_ore' } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "kubejs:dirty_debri", "amount": Math.min(10000, 10000), "chemicalType": "slurry" }
+    })
+    event.custom(
+        { type: 'mekanism:washing', fluidInput: { 'amount': 5, 'fluid': 'minecraft:water' }, slurryInput: { 'amount': 1, 'slurry': 'kubejs:dirty_debri' }, output: { 'slurry': 'kubejs:clean_debri', 'amount': 10 } },
+    )
+
+
     tag = `#forge:ores/redstone`
     event.recipes.mekanism.enriching(`24x minecraft:redstone`, `mek1000:softore_redstone`) //2.5
     event.recipes.mekanism.purifying(`3x mek1000:softore_redstone`, "#forge:ores/redstone", '1x mekanism:oxygen') //3
@@ -252,6 +267,50 @@ ServerEvents.recipes(event => {
 
     event.smelting('kubejs:iridium', 'kubejs:dust_iridium')
     event.blasting('kubejs:iridium', 'kubejs:dust_iridium')
+    event.recipes.mekanism.enriching('kubejs:dust_iridium', 'kubejs:dirty_dust_iridium')
 
+    event.custom({
+        "type": "mekanism:crystallizing",
+        "chemicalType": "slurry",
+        "input": {
+            "amount": 200,
+            "slurry": "kubejs:clean_debri"
+        },
+        "output": {
+            "item": "kubejs:crystal_debri"
+        }
+    })
+    event.custom({
+        "type": "mekanism:injecting",
+        "itemInput": {
+            "ingredient": {
+                "tag": "mekanism:crystals/debri"
+            }
+        },
+        "chemicalInput": {
+            "amount": 1,
+            "gas": "mekanism:hydrogen_chloride"
+        },
+        "output": {
+            "item": "kubejs:shard_debri"
+        }
+    })
+    event.custom({
+        "type": "mekanism:crushing",
+        "input": {
+            "ingredient": {
+                "count": 1,
+                "tag": "mekanism:clumps/debri"
+            }
+        },
+        "output": {
+            "count": 1,
+            "item": "kubejs:dirty_dust_debri"
+        }
+    })
+
+    event.smelting('minecraft:netherite_scrap', 'kubejs:dust_debri')
+    event.blasting('minecraft:netherite_scrap', 'kubejs:dust_debri')
+    event.recipes.mekanism.enriching('kubejs:dust_debri', 'kubejs:dirty_dust_debri')
 
 })

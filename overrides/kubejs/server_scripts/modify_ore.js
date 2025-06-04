@@ -61,3 +61,7 @@ oreList.forEach(item => {
     })
 })
 
+ServerEvents.tags('item', event => {
+    event.add('forge:ores/debri', 'deepdepthnetherite:deepslate_netherite_ore')
+})
+

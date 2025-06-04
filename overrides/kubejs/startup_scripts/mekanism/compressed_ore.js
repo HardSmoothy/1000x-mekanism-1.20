@@ -53,4 +53,26 @@ StartupEvents.registry("item", event => {
         .texture(`kubejs:item/crystal_iridium`)
         .rarity("uncommon")
         .glow(true)
+
+    event // 凝塊
+        .create(`mek1000:compressed_debri_clump`)
+        .displayName(`compressed ancient debri clump`)
+        .maxStackSize(64)
+        .texture(`kubejs:item/clump_debri`)
+        .rarity("uncommon")
+        .glow(true)
+    event // 欠片
+        .create(`mek1000:compressed_debri_shard`)
+        .displayName(`compressed ancient debri shard`)
+        .maxStackSize(64)
+        .texture(`kubejs:item/shard_debri`)
+        .rarity("uncommon")
+        .glow(true)
+    event // 結晶
+        .create(`mek1000:compressed_debri_crystal`)
+        .displayName(`compressed ancient debri crystal`)
+        .maxStackSize(64)
+        .texture(`kubejs:item/crystal_debri`)
+        .rarity("uncommon")
+        .glow(true)
 })

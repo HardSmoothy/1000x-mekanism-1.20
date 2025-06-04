@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
             "itemOutput": { "item": `mek1000:compressed_purified_${type}_rawore`, "count": 2 },
         })
 
-        if (type == "iridium") {
+        if (type == "iridium" || type == "debri") {
             event.custom({
                 type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:compressed_purified_${type}_rawore` } }, gasInput: { "amount": 9, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_compressed_" + type, "amount": 7500, "chemicalType": "slurry" }
             })
@@ -167,6 +167,7 @@ ServerEvents.recipes(event => {
     advanced_processing("uranium")
     advanced_processing("lead")
     advanced_processing("iridium")
+    advanced_processing("debri")
 
     advanced_processing("redstone")
     advanced_processing("quartz")
