@@ -223,6 +223,23 @@
 			x: -2.5d
 			y: -2.0d
 		}
+		{
+			dependencies: ["51C1587257D31C07"]
+			id: "44F6EA6577D68936"
+			tasks: [{
+				id: "23144F55A19DB5A2"
+				item: {
+					Count: 1
+					id: "doomangelring:angelring"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
 	]
 	subtitle: ["{ftbquests.chapter.17633E6667C22EEC.subtitle0}"]
 	title: "{ftbquests.chapter.17633E6667C22EEC.title}"
