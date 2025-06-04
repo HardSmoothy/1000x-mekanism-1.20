@@ -1,5 +1,0 @@
-minecraft:overworld
-minecraft:the_end
-javd:void
-minecraft:the_nether
-ae2:spatial_storage
