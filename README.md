@@ -1,4 +1,4 @@
-# ![Extraordinary Energy : Modern](https://raw.githubusercontent.com/sponeru/1000x-mekanism-1.20/refs/heads/main/config/fancymenu/assets/modpack_title.png?raw=true)
+# ![Extraordinary Energy : Modern](https://raw.githubusercontent.com/sponeru/1000x-mekanism-1.20/refs/heads/main/overrides/config/fancymenu/assets/modpack_title.png?raw=true)
 ## Modpack Features(EN)
 ### All Mekanism machines consume 1000% more power.
 <img src="https://github.com/user-attachments/assets/05dc2293-12fa-4d7b-9710-2f07a327e03e" width=50% alt="energy-change"></img>
