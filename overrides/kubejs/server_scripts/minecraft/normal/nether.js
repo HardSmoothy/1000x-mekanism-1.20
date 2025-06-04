@@ -76,6 +76,27 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'experienceobelisk:molecular_metamorphosis',
         ingredient1:
+            { item: 'minecraft:green_candle' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:cactus', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
             { item: 'minecraft:wither_skeleton_skull' }
         ,
         count1: 3,
