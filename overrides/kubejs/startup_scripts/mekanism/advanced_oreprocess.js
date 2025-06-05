@@ -1,25 +1,32 @@
+function capitalizeFirstLetter(str) {
+    if (typeof str !== 'string' || str.length === 0) {
+        return str;
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 StartupEvents.registry("item", event => {
     let types = ["iron", "copper", "gold", "osmium", "tin", "lead", "uranium", "iridium", "redstone", "quartz", "certus_quartz", "fluorite", "coal", "lapis", "diamond", "emerald", "debri"]
     types.forEach(type => {
         event // 精製原石
             .create(`mek1000:purified_${type}_rawore`)
-            .displayName(`Purified ${type} ore`)
-            .tooltip(`とても純粋`)
+            .displayName(Text.translate("item.mek1000.purified_rawore.name", capitalizeFirstLetter(type)))
+            .tooltip(Text.translate("item.mek1000.purified_rawore.desc"))
             .maxStackSize(64)
             .texture(`kubejs:item/goodore`)
             .rarity("uncommon")
         event // 圧縮精製原石
             .create(`mek1000:compressed_purified_${type}_rawore`)
-            .displayName(`Compressed Purified ${type} ore`)
-            .tooltip(`まないたでModpackをぶっ壊そう。\nなおこれをエメラルドで増殖しないように。`)
+            .displayName(Text.translate("item.mek1000.compressed_purified_rawore.name", capitalizeFirstLetter(type)))
+            .tooltip(Text.translate("item.mek1000.compressed_purified_rawore.desc"))
             .maxStackSize(16)
             .texture(`kubejs:item/goodore`)
             .rarity("rare")
             .glow(true)
         event // 繊細に結晶化された鉱石
             .create(`mek1000:crystalized_${type}_rawore`)
-            .displayName(`Delicately Crystalized ${type} ore`)
-            .tooltip(`最後の強化`)
+            .displayName(Text.translate("item.mek1000.crystalized_rawore.name", capitalizeFirstLetter(type)))
+            .tooltip(Text.translate("item.mek1000.crystalized_rawore.desc"))
             .maxStackSize(32)
             .texture(`kubejs:item/goodore`)
             .rarity("epic")
