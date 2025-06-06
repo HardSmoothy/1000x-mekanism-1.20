@@ -8,7 +8,10 @@
 
 This modpack is an unofficial port of [Extraordinary Energy](https://github.com/Valine3gDev/1000x-mekanism) to version 1.20.1.
 
-Some of the textures for items and blocks (excluding Super Circuit, Iridium, Iridium Ore / Dense Ore, and Dense Quartz Ore) are reused from this source.
+Some of the textures for items and blocks (excluding Super Circuit, Iridium, Iridium Ore / Dense Ore, and Dense Quartz Ore) 
+Ore processing recipe addition script, Quest description text 
+
+are reused from this source.
 
 ### All Mekanism machines consume 1000% more power.
 <img src="https://github.com/user-attachments/assets/05dc2293-12fa-4d7b-9710-2f07a327e03e" width=50% alt="energy-change"></img>
@@ -23,7 +26,10 @@ Some of the textures for items and blocks (excluding Super Circuit, Iridium, Iri
 
 このModpackは [桁違いな電力](https://github.com/Valine3gDev/1000x-mekanism)を1.20.1に非公式にポートしたものです
 
-一部のアイテム・ブロック(Super Circuit、イリジウム、イリジウム鉱石・高密度鉱石、高密度クオーツ鉱石以外)のテクスチャーについてはこちらから流用しています
+一部のアイテム・ブロック(Super Circuit、イリジウム、イリジウム鉱石・高密度鉱石、高密度クオーツ鉱石以外)のテクスチャー
+鉱石処理系のレシピ追加スクリプト、クエストの説明文
+
+についてはこちらから流用しています
 
 ### Mekanismの機械全てが1000倍の消費電力
 <img src="https://github.com/user-attachments/assets/05dc2293-12fa-4d7b-9710-2f07a327e03e" width=50% alt="energy-change"></img>
