@@ -23,7 +23,7 @@ Some of the textures for items and blocks (excluding Super Circuit, Iridium, Iri
 
 このModpackは [桁違いな電力](https://github.com/Valine3gDev/1000x-mekanism)を1.20.1に非公式にポートしたものです
 
-一部のアイテム・ブロック(Super Circuit、イリジウム、イリジウム鉱石・高密度鉱石、圧縮クオーツ以外)のテクスチャーについてはこちらから流用しています
+一部のアイテム・ブロック(Super Circuit、イリジウム、イリジウム鉱石・高密度鉱石、高密度クオーツ鉱石以外)のテクスチャーについてはこちらから流用しています
 
 ### Mekanismの機械全てが1000倍の消費電力
 <img src="https://github.com/user-attachments/assets/05dc2293-12fa-4d7b-9710-2f07a327e03e" width=50% alt="energy-change"></img>
