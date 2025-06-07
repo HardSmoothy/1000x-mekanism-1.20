@@ -121,6 +121,16 @@ ServerEvents.recipes(event => {
     crystalize_prec("cq", "mek1000:clean_certus_quartz", "mek1000:prec_certus_quartz", "mek1000:crystal_certus_quartz", 20, 20)
     crystalize_prec("ft", "mek1000:clean_fluorite", "mek1000:prec_fluorite", "mek1000:crystal_fluorite", 20, 20)
 
+    crystalize_prec("cfe", "mek1000:clean_compressed_iron", "mek1000:prec_compress_iron", "mek1000:compressed_iron_crystal", 20, 20)
+    crystalize_prec("ccu", "mek1000:clean_compressed_copper", "mek1000:prec_compress_copper", "mek1000:compressed_copper_crystal", 20, 20)
+    crystalize_prec("cau", "mek1000:clean_compressed_gold", "mek1000:prec_compress_gold", "mek1000:compressed_gold_crystal", 20, 20)
+    crystalize_prec("csn", "mek1000:clean_compressed_tin", "mek1000:prec_compress_tin", "mek1000:compressed_tin_crystal", 20, 20)
+    crystalize_prec("cos", "mek1000:clean_compressed_osmium", "mek1000:prec_compress_osmium", "mek1000:compressed_osmium_crystal", 20, 20)
+    crystalize_prec("cur", "mek1000:clean_compressed_uranium", "mek1000:prec_compress_uranium", "mek1000:compressed_uranium_crystal", 20, 20)
+    crystalize_prec("cpb", "mek1000:clean_compressed_lead", "mek1000:prec_compress_lead", "mek1000:compressed_lead_crystal", 20, 20)
+    crystalize_prec("cir", "mek1000:clean_compressed_iridium", "mek1000:prec_compress_iridium", "mek1000:compressed_iridium_crystal", 20, 20)
+    crystalize_prec("cdb", "mek1000:clean_compressed_debri", "mek1000:prec_compress_debri", "mek1000:compressed_debri_crystal", 20, 20)
+
     crystalize_prec("la", "mek1000:clean_lapis", "mek1000:prec_lapis", "mek1000:crystal_lapis", 40, 2)
     crystalize_prec("co", "mek1000:clean_coal", "mek1000:prec_coal", "mek1000:crystal_coal", 40, 2)
 

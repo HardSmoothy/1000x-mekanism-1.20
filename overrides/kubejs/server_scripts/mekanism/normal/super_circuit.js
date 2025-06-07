@@ -112,4 +112,6 @@ ServerEvents.recipes(event => {
             C: 'mekanism_extras:infinite_energy_cube'
         }
     )
+
+    event.remove({ output: 'mekanismelements:dust_calcium_oxide' })
 })

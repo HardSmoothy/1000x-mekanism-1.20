@@ -1,6 +1,6 @@
 #FE stored per byte.
 #Range: > 1
-amount = 4194304
+amount = 419430400
 #The I/O limit of Flux Accessor. 0 means no limitation.
 #Range: 0 ~ 2147483647
 io_limit = 0

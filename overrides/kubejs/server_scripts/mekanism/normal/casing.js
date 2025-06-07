@@ -209,6 +209,15 @@ ServerEvents.recipes(event => {
         t: 'mek1000:reinforced_steel_casing'
     })
 
+    event.shaped('mek1000:fluid_output', [
+        '   ',
+        't  ',
+        'e  '
+    ], {
+        e: 'mekanism:ultimate_fluid_tank',
+        t: 'mek1000:reinforced_steel_casing'
+    })
+
     global.convert.push(['mek1000:item_input', 'mek1000:item_output'])
 
     event.shapeless('mek1000:energy_output', ['mek1000:reinforced_steel_casing', 'mekanism:induction_port'])

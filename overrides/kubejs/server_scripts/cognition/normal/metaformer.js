@@ -74,4 +74,25 @@ ServerEvents.recipes(event => {
         4,
         25250,
         2000)
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: "minecraft:book" }
+        ,
+        count1: 1,
+        ingredient2:
+            []
+        ,
+        count2: 0,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:enchanted_book', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
 })

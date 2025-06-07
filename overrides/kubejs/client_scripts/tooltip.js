@@ -9,6 +9,7 @@ ItemEvents.tooltip(event => {
     event.add('mek1000:infinity_fusion_controller', [Text.translate("mek1000.infinity_fusion_controller.desc"), Text.translate("mek1000.multi.desc").aqua()])
     event.add('mek1000:large_digital_assembly_table', [Text.translate("mek1000.large_digital_assembly_table.desc"), Text.translate("mek1000.multi.desc").aqua()])
     event.add('mek1000:rockbreak_simulator', [Text.translate("mek1000.rockbreak_simulator.desc"), Text.translate("mek1000.multi.desc").aqua()])
+    event.add('mek1000:library_of_babel', [Text.translate("mek1000.library_of_babel.desc"), Text.translate("mek1000.multi.desc").aqua()])
 
     event.add('mek1000:advanced_gas_burning_generator', [Text.translate("mek1000.advanced_gas_burning_generator.desc")])
 
