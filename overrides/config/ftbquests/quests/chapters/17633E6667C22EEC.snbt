@@ -227,17 +227,12 @@
 		}
 		{
 			dependencies: ["4F31918E1746CC36"]
+			hide_until_deps_complete: true
 			id: "44F6EA6577D68936"
 			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest11.subtitle}"
 			tasks: [{
-				id: "23144F55A19DB5A2"
-				item: {
-					Count: 1
-					id: "doomangelring:angelring"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "2A6F01B6C7C2A67D"
+				item: "better_angel_ring:angel_ring"
 				type: "item"
 			}]
 			x: -1.5d

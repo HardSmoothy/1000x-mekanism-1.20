@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
     event.recipes.mekanism.injecting(`mek1000:extructed_certus_quartz`, 'mek1000:crystal_certus_quartz', '1x mekanism:hydrogen_chloride') //4
 
     event.custom({ //5-0
-        type: "mekanism:dissolution", itemInput: { "ingredient": { "tag": tag.slice(1) } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_certus_quartz", "amount": 2500, "chemicalType": "slurry" }
+        type: "mekanism:dissolution", itemInput: { "ingredient": { "tag": tag.slice(1) } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_certus_quartz", "amount": 2400, "chemicalType": "slurry" }
     })
     event.custom( //5-1
         { type: 'mekanism:washing', fluidInput: { 'amount': 5, 'fluid': 'minecraft:water' }, slurryInput: { 'amount': 1, 'slurry': 'mek1000:dirty_certus_quartz' }, output: { "slurry": "mek1000:clean_certus_quartz", 'amount': 10 } },

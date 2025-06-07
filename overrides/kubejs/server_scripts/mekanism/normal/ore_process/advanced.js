@@ -116,10 +116,10 @@ ServerEvents.recipes(event => {
 
         if (type == "iridium" || type == "debri") {
             event.custom({
-                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:compressed_purified_${type}_rawore` } }, gasInput: { "amount": 9, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_compressed_" + type, "amount": 7500, "chemicalType": "slurry" }
+                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:compressed_purified_${type}_rawore` } }, gasInput: { "amount": 9, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_compressed_" + type, "amount": 7400, "chemicalType": "slurry" }
             })
             event.custom({
-                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:purified_${type}_rawore` } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "kubejs:dirty_" + type, "amount": 7500, "chemicalType": "slurry" }
+                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:purified_${type}_rawore` } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "kubejs:dirty_" + type, "amount": 7400, "chemicalType": "slurry" }
             })
         }
         else if (type == "redstone" || type == "quartz" || type == "certus_quartz" || type == "fluorite") {
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
                 type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:compressed_purified_${type}_rawore` } }, gasInput: { "amount": 4, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_" + type, "amount": 10000, "chemicalType": "slurry" }
             })
             event.custom({
-                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:purified_${type}_rawore` } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_" + type, "amount": 2500, "chemicalType": "slurry" }
+                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:purified_${type}_rawore` } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_" + type, "amount": 2400, "chemicalType": "slurry" }
             })
         }
         else if (type == "coal" || type == "diamond" || type == "emerald" || type == "lapis") {
@@ -152,10 +152,10 @@ ServerEvents.recipes(event => {
         }
         else {
             event.custom({
-                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:compressed_purified_${type}_rawore` } }, gasInput: { "amount": 9, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_compressed_" + type, "amount": 7500, "chemicalType": "slurry" }
+                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:compressed_purified_${type}_rawore` } }, gasInput: { "amount": 9, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_compressed_" + type, "amount": 7400, "chemicalType": "slurry" }
             })
             event.custom({
-                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:purified_${type}_rawore` } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mekanism:dirty_" + type, "amount": 7500, "chemicalType": "slurry" }
+                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": `mek1000:purified_${type}_rawore` } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mekanism:dirty_" + type, "amount": 7400, "chemicalType": "slurry" }
             })
         }
     }

@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
             event.recipes.mekanism.purifying(`${Math.floor(multiplier * 4)}x mek1000:softore_quartz`, input_item, '1x mekanism:oxygen') //3
             event.recipes.mekanism.injecting(`${Math.floor(multiplier * 8)}x mek1000:extructed_quartz`, input_item, '1x mekanism:hydrogen_chloride') //4
             event.custom({ //5-0
-                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": input_item } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_quartz", "amount": 2500, "chemicalType": "slurry" }
+                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": input_item } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_quartz", "amount": 2400, "chemicalType": "slurry" }
             })
         } else if (ore_type == "lapis_lazuli") {
             event.recipes.mekanism.enriching(`${Math.floor(multiplier * 12)}x minecraft:${ore_type}`, input_item,)
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
             event.recipes.mekanism.purifying(`${Math.floor(multiplier * 4)}x mek1000:softore_fluorite`, input_item, '1x mekanism:oxygen') //3
             event.recipes.mekanism.injecting(`${Math.floor(multiplier * 8)}x mek1000:extructed_fluorite`, input_item, '1x mekanism:hydrogen_chloride') //4
             event.custom({ //5-0
-                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": input_item } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_fluorite", "amount": 2500, "chemicalType": "slurry" }
+                type: "mekanism:dissolution", itemInput: { "ingredient": { "item": input_item } }, gasInput: { "amount": 1, "gas": "mekanism:sulfuric_acid" }, output: { "slurry": "mek1000:dirty_fluorite", "amount": 2400, "chemicalType": "slurry" }
             })
         } else if (ore_type == "iridium") {
             event.recipes.mekanism.enriching(`${Math.floor(multiplier * 9)}x kubejs:dust_iridium`, input_item)
@@ -146,6 +146,8 @@ ServerEvents.recipes(event => {
 
     appendix_extreme("densemekanism:dense_tin_ore", "tin", 4)
     appendix_extreme("densemekanism:dense_deepslate_tin_ore", "tin", 4)
+    appendix_extreme("densemekanism:dense_lead_ore", "lead", 4)
+    appendix_extreme("densemekanism:dense_deepslate_lead_ore", "lead", 4)
     appendix_extreme("densemekanism:dense_uranium_ore", "uranium", 4)
     appendix_extreme("densemekanism:dense_deepslate_uranium_ore", "uranium", 4)
     appendix_extreme("densemekanism:dense_fluorite_ore", "fluorite", 4)
