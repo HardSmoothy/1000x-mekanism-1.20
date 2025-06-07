@@ -20,6 +20,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.mekanismMetallurgicInfusing('minecraft:basalt', 'minecraft:netherrack', '10x mekanism:carbon')
 
+    event.recipes.mekanismMetallurgicInfusing('2x minecraft:prismarine_shard', 'integrateddynamics:crystalized_menril_chunk', '10x mekanism:diamond')
+
     event.recipes.mekanismMetallurgicInfusing('minecraft:crimson_fungus', '#forge:mushrooms', '100x mekanism:redstone')
 
     event.recipes.mekanismMetallurgicInfusing('minecraft:warped_fungus', '#forge:mushrooms', '100x mekanism:diamond')
@@ -27,6 +29,9 @@ ServerEvents.recipes(event => {
     event.recipes.mekanism.crushing("minecraft:red_sand", 'exdeorum:crushed_netherrack')
     event.recipes.mekanism.crushing('exdeorum:crushed_netherrack', 'minecraft:netherrack')
     event.recipes.mekanism.crushing('exdeorum:dust', 'minecraft:sand')
+    event.recipes.mekanism.crushing('minecraft:prismarine_crystals', 'minecraft:prismarine_shard')
+
+    event.recipes.mekanism.enriching('minecraft:cobweb', 'minecraft:string')
 
     event.custom({
         "type": "mekanism:painting",
