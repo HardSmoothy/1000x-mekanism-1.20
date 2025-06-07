@@ -223,6 +223,69 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'experienceobelisk:molecular_metamorphosis',
         ingredient1:
+            { item: 'ae2:smooth_sky_stone_chest' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:shulker_shell', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'minecraft:leather' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:rabbit_hide', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'minecraft:rabbit_hide' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:rabbit_foot', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
             { item: 'minecraft:paper' }
         ,
         count1: 1,
