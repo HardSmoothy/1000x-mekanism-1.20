@@ -92,18 +92,35 @@ ServerEvents.recipes(event => {
         event.custom(
             { type: 'mekanism:washing', fluidInput: { 'amount': 300, 'fluid': 'minecraft:water' }, slurryInput: { 'amount': 200, 'slurry': `${normal}` }, output: { "slurry": `${washed}`, 'amount': 1 } },
         ).id(`mek1000:doublewashing_${type}`)
-        event.custom({
-            "type": "mekanism:crystallizing",
-            "chemicalType": "slurry",
-            "input": {
-                "amount": amount_s,
-                "slurry": washed
-            },
-            "output": {
-                "amount": amount,
-                "item": crystal
-            }
-        })
+
+        if (type == "cfe" || type == "ccu" || type == "cau" || type == "csn" || type == "cos" || type == "cur" || type == "cpb" || type == "cir" || type == "cdb") {
+            event.custom({
+                "type": "mekanism:crystallizing",
+                "chemicalType": "slurry",
+                "input": {
+                    "amount": 15,
+                    "slurry": washed
+                },
+                "output": {
+                    "amount": 15,
+                    "item": crystal
+                }
+            })
+        } else {
+            event.custom({
+                "type": "mekanism:crystallizing",
+                "chemicalType": "slurry",
+                "input": {
+                    "amount": amount_s,
+                    "slurry": washed
+                },
+                "output": {
+                    "amount": amount,
+                    "item": crystal
+                }
+
+            })
+        }
     }
 
     crystalize_prec("fe", "mekanism:clean_iron", "mek1000:prec_iron", "mekanism:crystal_iron", 20, 20)
