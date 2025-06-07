@@ -12,6 +12,22 @@ ServerEvents.recipes(event => {
 
     event.recipes.mekanismMetallurgicInfusing('minecraft:netherrack', 'minecraft:cobblestone', '10x mekanism:redstone')
 
+    event.recipes.mekanismMetallurgicInfusing('minecraft:blackstone', 'minecraft:cobblestone', '10x mekanism:carbon')
+
+    event.recipes.mekanismMetallurgicInfusing('minecraft:deepslate', 'minecraft:stone', '10x mekanism:carbon')
+
+    event.recipes.mekanismMetallurgicInfusing('minecraft:calcite', 'minecraft:stone', '10x mekanism:tin')
+
+    event.recipes.mekanismMetallurgicInfusing('minecraft:basalt', 'minecraft:netherrack', '10x mekanism:carbon')
+
+    event.recipes.mekanismMetallurgicInfusing('minecraft:crimson_fungus', '#forge:mushrooms', '100x mekanism:redstone')
+
+    event.recipes.mekanismMetallurgicInfusing('minecraft:warped_fungus', '#forge:mushrooms', '100x mekanism:diamond')
+
+    event.recipes.mekanism.crushing("minecraft:red_sand", 'exdeorum:crushed_netherrack')
+    event.recipes.mekanism.crushing('exdeorum:crushed_netherrack', 'minecraft:netherrack')
+    event.recipes.mekanism.crushing('exdeorum:dust', 'minecraft:sand')
+
     event.custom({
         "type": "mekanism:painting",
         "itemInput": {
@@ -37,6 +53,111 @@ ServerEvents.recipes(event => {
         },
         "output": 'minecraft:kelp'
     })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:calcite' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:blue",
+            "amount": 100
+        },
+        "output": 'minecraft:tube_coral_block'
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:calcite' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:pink",
+            "amount": 100
+        },
+        "output": 'minecraft:brain_coral_block'
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:calcite' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:purple",
+            "amount": 100
+        },
+        "output": 'minecraft:bubble_coral_block'
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:calcite' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:red",
+            "amount": 100
+        },
+        "output": 'minecraft:fire_coral_block'
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:calcite' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:yellow",
+            "amount": 100
+        },
+        "output": 'minecraft:horn_coral_block'
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:glowstone' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:yellow",
+            "amount": 100
+        },
+        "output": 'minecraft:ochre_froglight'
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:glowstone' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:green",
+            "amount": 100
+        },
+        "output": 'minecraft:verdant_froglight'
+    })
+
+    event.custom({
+        "type": "mekanism:painting",
+        "itemInput": {
+            "ingredient": { "item": 'minecraft:glowstone' },
+            "amount": 1
+        },
+        "chemicalInput": {
+            "pigment": "mekanism:purple",
+            "amount": 100
+        },
+        "output": 'minecraft:pearlescent_froglight'
+    })
+
 
     event.shaped(
         Item.of('minecraft:elytra', 1),
@@ -68,6 +189,153 @@ ServerEvents.recipes(event => {
         count3: 0,
         result:
             { item: 'minecraft:sugar_cane', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'ae2:black_paint_ball' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:ink_sac', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'minecraft:paper' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'exdeorum:random_armor_trim', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'minecraft:brick' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'exdeorum:random_pottery_sherd', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'mek1000:stray_cat' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:totem_of_undying', count: 1 }
+        ,
+        cost: 2000,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'experienceobelisk:bibliophage' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:brown_mushroom', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'minecraft:brown_mushroom' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:red_mushroom', count: 1 }
+        ,
+        cost: 20,
+        processTime: 20
+    })
+
+    event.custom({
+        type: 'experienceobelisk:molecular_metamorphosis',
+        ingredient1:
+            { item: 'integrateddynamics:menril_berries' }
+        ,
+        count1: 1,
+        ingredient2:
+            { item: 'experienceobelisk:transforming_focus' }
+        ,
+        count2: 1,
+        ingredient3:
+            []
+        ,
+        count3: 0,
+        result:
+            { item: 'minecraft:sweet_berries', count: 1 }
         ,
         cost: 20,
         processTime: 20

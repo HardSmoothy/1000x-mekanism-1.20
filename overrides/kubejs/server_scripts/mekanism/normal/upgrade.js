@@ -30,5 +30,5 @@ ServerEvents.recipes(event => {
     upgr('mekanism:upgrade_gas', 'minecraft:redstone', 'minecraft:glass', '#forge:ingots/iron')
     upgr('mekanism:upgrade_anchor', 'minecraft:redstone', 'minecraft:glass', '#forge:gems/diamond')
     upgr('mekanism:upgrade_stone_generator', 'minecraft:redstone', 'minecraft:glass', 'minecraft:cobblestone')
-    upgr('mekanism_extras:upgrade_stack', 'mek1000:absolute_super_circuit', 'mek1000:laser_glass', 'sophisticatedstorage:netherite_chest')
+    upgr('mekanism_extras:upgrade_stack', 'mek1000:absolute_super_circuit', 'mek1000:laser_glass', 'mekanism_extras:infinite_tier_installer')
 })

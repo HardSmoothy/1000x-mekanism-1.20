@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.shaped(Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:i",id:"mek1000:ultimate_dye_base"}}'), [
+    event.shaped('mae2a:infinite_dyes_cell', [
         'GBG',
         'BCB',
         'DDD'
@@ -88,4 +88,6 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'expatternprovider:fishbig' })
+    event.remove({ output: 'mae2a:pattern_provider_upgrade' })
+    event.remove({ output: 'mae2a:pattern_provider_plus' })
 })
