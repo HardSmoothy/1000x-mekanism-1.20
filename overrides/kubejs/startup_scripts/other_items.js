@@ -1,8 +1,8 @@
 StartupEvents.registry("item", event => {
-    event.create('mek1000:energy_cataryst').texture(`mek1000:item/wip`)
-    event.create('mek1000:item_cataryst').texture(`mek1000:item/wip`)
-    event.create('mek1000:fluid_cataryst').texture(`mek1000:item/wip`)
-    event.create('mek1000:gas_cataryst').texture(`mek1000:item/wip`)
+    event.create('mek1000:energy_cataryst')
+    event.create('mek1000:item_cataryst')
+    event.create('mek1000:fluid_cataryst')
+    event.create('mek1000:gas_cataryst')
     event.create('mek1000:emc')
     event.create('mek1000:the_null')
 

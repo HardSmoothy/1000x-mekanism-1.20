@@ -90,4 +90,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'expatternprovider:fishbig' })
     event.remove({ output: 'mae2a:pattern_provider_upgrade' })
     event.remove({ output: 'mae2a:pattern_provider_plus' })
+
+    event.recipes.mekanism.crushing("ae2:ender_dust", "minecraft:ender_pearl");
 })

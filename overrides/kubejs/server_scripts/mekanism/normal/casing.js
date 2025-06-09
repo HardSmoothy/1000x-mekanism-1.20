@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         'tnt',
         'ese'
     ], {
-        e: 'mekanism:hdpe_sheet',
+        e: 'advanced_ae:quantum_alloy_plate',
         t: 'mekanism_extras:alloy_thermonuclear',
         n: 'mekanism:teleportation_core',
         s: 'mekanism_extras:infinite_energy_cube'
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         'tnt',
         'ese'
     ], {
-        e: 'mekanism:hdpe_sheet',
+        e: 'advanced_ae:quantum_alloy_plate',
         t: 'mekanism_extras:alloy_thermonuclear',
         n: 'mekanism:teleportation_core',
         s: 'mekanism:ultimate_fluid_tank'
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         'tnt',
         'ese'
     ], {
-        e: 'mekanism:hdpe_sheet',
+        e: 'advanced_ae:quantum_alloy_plate',
         t: 'mekanism_extras:alloy_thermonuclear',
         n: 'mekanism:teleportation_core',
         s: 'megacells:bulk_cell_component'
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
         'tnt',
         'ese'
     ], {
-        e: 'mekanism:hdpe_sheet',
+        e: 'advanced_ae:quantum_alloy_plate',
         t: 'mekanism_extras:alloy_thermonuclear',
         n: 'mekanism:teleportation_core',
         s: 'mekanism:ultimate_chemical_tank'

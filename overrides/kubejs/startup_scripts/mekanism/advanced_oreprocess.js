@@ -18,7 +18,7 @@ StartupEvents.registry("item", (event) => {
     ["iridium", 0xf3ff80, Text.translate("mek1000.material.iridium")],
     ["redstone", 0xff2020, Text.translate("mek1000.material.redstone")],
     ["quartz", 0xffc0b1, Text.translate("mek1000.material.quartz")],
-    ["certus_quartz",0xb1c0ff,Text.translate("mek1000.material.certus_quartz"),],
+    ["certus_quartz",0xb1c0ff,Text.translate("mek1000.material.certus_quartz")],
     ["fluorite", 0xffb0ff, Text.translate("mek1000.material.fluorite")],
     ["coal", 0x444444, Text.translate("mek1000.material.coal")],
     ["lapis", 0x4444ff, Text.translate("mek1000.material.lapis")],
@@ -37,10 +37,8 @@ StartupEvents.registry("item", (event) => {
         layer0: "mek1000:item/purified_ore_base",
         layer1: "mek1000:item/purified_ore_overlay",
       })
-      .tag(
-        `mek1000:ores/purifired/${item[0]}`,
-        `mek1000:ores/purifired`
-      )
+      .tag(`mek1000:ores/purifired/${item[0]}`)
+      .tag(`mek1000:ores/purifired`)
       .color(1, item[1])
       .rarity("uncommon");
 
@@ -55,10 +53,8 @@ StartupEvents.registry("item", (event) => {
         layer0: "mek1000:item/compressed_purified_ore_base",
         layer1: "mek1000:item/compressed_purified_ore_overlay",
       })
-      .tag(
-        `mek1000:ores/compressed_purified/${item[0]}`,
-        `mek1000:ores/compressed_purified`
-      )
+      .tag(`mek1000:ores/compressed_purified/${item[0]}`)
+      .tag(`mek1000:ores/compressed_purified`)
       .color(1, item[1])
       .rarity("rare");
 
@@ -73,10 +69,8 @@ StartupEvents.registry("item", (event) => {
         layer0: "mek1000:item/crystalized_ore_base",
         layer1: "mek1000:item/crystalized_ore_overlay",
       })
-      .tag(
-        `mek1000:ores/crystalized/${item[0]}`,
-        `mek1000:ores/crystalized`
-      )
+      .tag(`mek1000:ores/crystalized/${item[0]}`)
+      .tag(`mek1000:ores/crystalized`)
       .color(1, item[1])
       .rarity("epic");
   });

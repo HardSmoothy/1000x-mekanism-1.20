@@ -1,49 +1,165 @@
-StartupEvents.registry("item", event => {
-    event.create('mek1000:crystal_redstone').tag('mekanism:crystals')
-        .displayName(Text.translate("item.mek1000.crystal_gem.name", "Redstone"))
-        .tooltip(Text.translate("item.mek1000.crystal_gem_A.desc")).texture("kubejs:item/crystal_redstone")
+StartupEvents.registry("item", (event) => {
+  event
+    .create("mek1000:crystal_redstone")
+    .tag("mekanism:crystals")
+    .tag("mek1000:ores/gem/crystal")
+    .tag("mek1000:ores/gem/crystal/redstone")
+    .displayName(
+      Text.translate(
+        "item.mek1000.crystal_gem.name",
+        Text.translate("mek1000.material.redstone")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.crystal_gem_A.desc"))
+    .texture("kubejs:item/crystal_redstone");
 
-    event.create('mek1000:extructed_redstone').tag('mekanism:shards')
-        .displayName(Text.translate("item.mek1000.extracted_gem.name", "Redstone"))
-        .tooltip(Text.translate("item.mek1000.extracted_gem_A.desc")).texture("kubejs:item/soft_redstone")
+  event
+    .create("mek1000:extructed_redstone")
+    .tag("mekanism:shards")
+    .tag("mek1000:ores/gem/extracted")
+    .tag("mek1000:ores/gem/extracted/redstone")
+    .displayName(
+      Text.translate(
+        "item.mek1000.extracted_gem.name",
+        Text.translate("mek1000.material.redstone")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.extracted_gem_A.desc"))
+    .texture("kubejs:item/extructed_redstone");
 
-    event.create('mek1000:softore_redstone')
-        .displayName(Text.translate("item.mek1000.soft_ore.name", "Redstone Ore"))
-        .tooltip(Text.translate("item.mek1000.soft_ore.desc")).texture("kubejs:item/soft_redstone").glow(true)
+  event
+    .create("mek1000:softore_redstone")
+    .tag("mek1000:ores/gem/soft")
+    .tag("mek1000:ores/gem/soft/redstone")
+    .displayName(
+      Text.translate(
+        "item.mek1000.soft_ore.name",
+        Text.translate("mek1000.material.redstone")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.soft_ore.desc"))
+    .texture("kubejs:item/softore_redstone");
 
-    event.create('mek1000:crystal_certus_quartz').tag('mekanism:crystals')
-        .displayName(Text.translate("item.mek1000.crystal_gem.name", "Quartz Crystal"))
-        .tooltip(Text.translate("item.mek1000.crystal_gem_B.desc")).texture("kubejs:item/crystal_redstone")
+  event
+    .create("mek1000:crystal_certus_quartz")
+    .tag("mekanism:crystals")
+    .tag("mek1000:ores/gem/crystal")
+    .tag("mek1000:ores/gem/crystal/certus_quartz")
+    .displayName(
+      Text.translate(
+        "item.mek1000.crystal_gem.name",
+        Text.translate("mek1000.material.certus_quartz")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.crystal_gem_B.desc"))
+    .texture("kubejs:item/crystal_certus_quartz");
 
-    event.create('mek1000:extructed_certus_quartz').tag('mekanism:shards')
-        .displayName(Text.translate("item.mek1000.extracted_gem.name", "Certus Quartz"))
-        .tooltip(Text.translate("item.mek1000.extracted_gem_A.desc")).texture("kubejs:item/soft_redstone")
+  event
+    .create("mek1000:extructed_certus_quartz")
+    .tag("mekanism:shards")
+    .tag("mek1000:ores/gem/extracted")
+    .tag("mek1000:ores/gem/extracted/certus_quartz")
+    .displayName(
+      Text.translate(
+        "item.mek1000.extracted_gem.name",
+        Text.translate("mek1000.material.certus_quartz")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.extracted_gem_A.desc"))
+    .texture("kubejs:item/extructed_certus_quartz");
 
-    event.create('mek1000:softore_certus_quartz')
-        .displayName(Text.translate("item.mek1000.soft_ore.name", "Certus Quartz"))
-        .tooltip(Text.translate("item.mek1000.soft_ore.desc")).texture("kubejs:item/soft_redstone").glow(true)
+  event
+    .create("mek1000:softore_certus_quartz")
+    .tag("mek1000:ores/gem/soft")
+    .tag("mek1000:ores/gem/soft/certus_quartz")
+    .displayName(
+      Text.translate(
+        "item.mek1000.soft_ore.name",
+        Text.translate("mek1000.material.certus_quartz")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.soft_ore.desc"))
+    .texture("kubejs:item/softore_certus_quartz");
 
-    event.create('mek1000:crystal_fluorite').tag('mekanism:crystals')
-        .displayName(Text.translate("item.mek1000.crystal_gem.name", "Fluorite"))
-        .tooltip(Text.translate("item.mek1000.crystal_gem_C.desc")).texture("kubejs:item/crystal_redstone")
+  event
+    .create("mek1000:crystal_fluorite")
+    .tag("mekanism:crystals")
+    .tag("mek1000:ores/gem/crystal")
+    .tag("mek1000:ores/gem/crystal/fluorite")
+    .displayName(
+      Text.translate(
+        "item.mek1000.crystal_gem.name",
+        Text.translate("mek1000.material.fluorite")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.crystal_gem_C.desc"))
+    .texture("kubejs:item/crystal_fluorite");
 
-    event.create('mek1000:extructed_fluorite').tag('mekanism:shards')
-        .displayName(Text.translate("item.mek1000.extracted_gem.name", "Fluorite"))
-        .tooltip(Text.translate("item.mek1000.extracted_gem_B.desc")).texture("kubejs:item/soft_redstone")
+  event
+    .create("mek1000:extructed_fluorite")
+    .tag("mekanism:shards")
+    .tag("mek1000:ores/gem/extracted")
+    .tag("mek1000:ores/gem/extracted/fluorite")
+    .displayName(
+      Text.translate(
+        "item.mek1000.extracted_gem.name",
+        Text.translate("mek1000.material.fluorite")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.extracted_gem_B.desc"))
+    .texture("kubejs:item/extructed_fluorite");
 
-    event.create('mek1000:softore_fluorite')
-        .displayName(Text.translate("item.mek1000.soft_ore.name", "Fluorite"))
-        .tooltip(Text.translate("item.mek1000.soft_ore.desc")).texture("kubejs:item/soft_redstone").glow(true)
+  event
+    .create("mek1000:softore_fluorite")
+    .tag("mek1000:ores/gem/soft")
+    .tag("mek1000:ores/gem/soft/fluorite")
+    .displayName(
+      Text.translate(
+        "item.mek1000.soft_ore.name",
+        Text.translate("mek1000.material.fluorite")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.soft_ore.desc"))
+    .texture("kubejs:item/softore_fluorite");
 
-    event.create('mek1000:crystal_quartz').tag('mekanism:crystals')
-        .displayName(Text.translate("item.mek1000.crystal_gem.name", "Quartz"))
-        .tooltip(Text.translate("item.mek1000.crystal_gem_D.desc")).texture("kubejs:item/crystal_redstone")
+  event
+    .create("mek1000:crystal_quartz")
+    .tag("mekanism:crystals")
+    .tag("mek1000:ores/gem/crystal")
+    .tag("mek1000:ores/gem/crystal/quartz")
+    .displayName(
+      Text.translate(
+        "item.mek1000.crystal_gem.name",
+        Text.translate("mek1000.material.quartz")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.crystal_gem_D.desc"))
+    .texture("kubejs:item/crystal_quartz");
 
-    event.create('mek1000:extructed_quartz').tag('mekanism:shards')
-        .displayName(Text.translate("item.mek1000.extracted_gem.name", "Quartz"))
-        .tooltip(Text.translate("item.mek1000.extracted_gem_C.desc")).texture("kubejs:item/soft_redstone")
+  event
+    .create("mek1000:extructed_quartz")
+    .tag("mekanism:shards")
+    .tag("mek1000:ores/gem/extracted")
+    .tag("mek1000:ores/gem/extracted/quartz")
+    .displayName(
+      Text.translate(
+        "item.mek1000.extracted_gem.name",
+        Text.translate("mek1000.material.quartz")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.extracted_gem_C.desc"))
+    .texture("kubejs:item/extructed_quartz");
 
-    event.create('mek1000:softore_quartz')
-        .displayName(Text.translate("item.mek1000.soft_ore.name", "Quartz"))
-        .tooltip(Text.translate("item.mek1000.soft_ore.desc")).texture("kubejs:item/soft_redstone").glow(true)
-})
+  event
+    .create("mek1000:softore_quartz")
+    .tag("mek1000:ores/gem/soft")
+    .tag("mek1000:ores/gem/soft/quartz")
+    .displayName(
+      Text.translate(
+        "item.mek1000.soft_ore.name",
+        Text.translate("mek1000.material.quartz")
+      )
+    )
+    .tooltip(Text.translate("item.mek1000.soft_ore.desc"))
+    .texture("kubejs:item/softore_quartz");
+});
