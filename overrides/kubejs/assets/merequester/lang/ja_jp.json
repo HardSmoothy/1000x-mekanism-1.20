@@ -9,7 +9,7 @@
 
   "tooltip.merequester.requester_desc": "必要に応じてクラフト要求を出すことで、指定された数のアイテムや液体、その他の物がネットワーク内に自動的に補填されるようにします。MEネットワークに接続する必要があり、MEリクエスターターミナルから一括で制御することが可能です。破壊されると設定は失われます。設定はメモリーカードでコピーペーストすることが可能です。",
 
-  "tooltip.merequester.shift_for_more": "%s以上",
+  "tooltip.merequester.shift_for_more": "%sを押して詳細を表示",
   "tooltip.merequester.enter_to_submit": "%sを送信",
 
   "tooltip.merequester.whole_number": "整数である必要があります!",
